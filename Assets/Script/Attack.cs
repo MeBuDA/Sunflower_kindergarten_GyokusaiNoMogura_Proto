@@ -1,17 +1,16 @@
-﻿//点数加算機構つけるつもりだった
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    void Start()
+    public Animator rootAnimator;
+    void OnTriggerEnter (Collider other)
     {
-        
-    }
-    void Update()
-    {
-        
+        if (other.gameObject.CompareTag ("Hammer"))
+        {
+            rootAnimator.SetTrigger ("Attack");
+            Debug.Log ("Attack");
+        }
     }
 }
