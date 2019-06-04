@@ -1,2 +1,4 @@
 # Sunflower_kindergarten_GyokusaiNoMogura_Prot
 Unity2018 4.01fだよ
+AssetとかSDKはAsset/Pluginsへどうぞ
+モデルやら音は別途Google Driveで共有するんで指定のフォルダに突っ込んで
