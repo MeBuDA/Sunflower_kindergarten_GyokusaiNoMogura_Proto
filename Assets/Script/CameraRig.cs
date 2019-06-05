@@ -8,7 +8,7 @@ using UnityEngine;
 public class CameraRig : MonoBehaviour
 {
     private Transform transForm;
-    public float mouseSensitivity = 1; //マウス感度
+    [SerializeField] float mouseSensitivity = 1; //マウス感度
     void Start ()
     {
         transForm = GetComponent<Transform> ();

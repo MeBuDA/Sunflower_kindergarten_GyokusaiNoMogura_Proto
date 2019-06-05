@@ -6,7 +6,7 @@ using UnityEngine;
 public class RollStick : MonoBehaviour
 {
     private　 Transform transForm;
-    public float moveSpeed = 1; //振り下ろし速度
+    [SerializeField] float moveSpeed = 1; //振り下ろし速度
     void Start ()
     {
         transForm = this.GetComponent<Transform> ();

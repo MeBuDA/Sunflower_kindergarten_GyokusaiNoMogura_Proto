@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/YukiNarayama/VR.unity
     guid: 02655b9341edd254997340d6f32cd9a5
+  - enabled: 1
+    path: Assets/Scenes/YukiNarayama/TestScene.unity
+    guid: f852ba138a2c48840ac13118b2edbc44
   m_configObjects: {}

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MoguraObjectManager : MonoBehaviour
 {
-    public int randomCountMax = 100; //出現頻度、上げると全然でなくて下げるとめっちゃ出る
+    [SerializeField] int randomCountMax = 100; //出現頻度、上げると全然でなくて下げるとめっちゃ出る
     const int size = 5; //合計のモグラ数
     public GameObject[] moguraObject = new GameObject[size]; //MoguraObjectのPrefabをアタッチして
     private MoguraPosition.Mogura[] moguraPosition = new MoguraPosition.Mogura[size];

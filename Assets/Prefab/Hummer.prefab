@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1058589268986937963}
   m_Layer: 0
   m_Name: Stick
-  m_TagString: Untagged
+  m_TagString: Hammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 5957120102936853108}
   m_Layer: 0
   m_Name: Hummer
-  m_TagString: Untagged
+  m_TagString: Hammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 5280625929247045368}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Hammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
