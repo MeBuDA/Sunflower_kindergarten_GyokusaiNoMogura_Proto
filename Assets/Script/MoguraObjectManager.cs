@@ -6,22 +6,22 @@ using UnityEngine;
 public class MoguraObjectManager : MonoBehaviour
 {
     [SerializeField] int randomCountMax = 100; //出現頻度、上げると全然でなくて下げるとめっちゃ出る
-    const int size = 5; //合計のモグラ数
-    public GameObject[] moguraObject = new GameObject[size]; //MoguraObjectのPrefabをアタッチして
-    private MoguraPosition.Mogura[] moguraPosition = new MoguraPosition.Mogura[size];
+    //public GameObject[] moguraObject; //MoguraObjectのPrefabをアタッチして
+    public MoguraPosition.Mogura[] moguraPosition;//= new MoguraPosition.Mogura[size];
+    /*
     void Awake ()
     {
-        for (int i = 0; size > i; i++)
+        for (int i = 0; moguraObject.Length > i; i++)
         {
-            moguraPosition[i] = moguraObject[i].GetComponent<Mogura> ();
+           moguraPosition[i] =  moguraObject[i].GetComponent<Mogura> ();
         }
-    }
+    }*/
     void Update ()
     {
         int randomCount = Random.Range (1, randomCountMax);
         if (randomCount == 1)
         {
-            int moguraPopPosition = Random.Range (0, size);
+            int moguraPopPosition = Random.Range (0, moguraPosition.Length);
             //とりあえず13個まで対応
             switch (moguraPopPosition)
             {
