@@ -5,22 +5,33 @@ using UnityEngine;
 
 public class RollStick : MonoBehaviour
 {
-    private　 Transform transForm;
+
+    private Transform transForm;
     [SerializeField] float moveSpeed = 1; //振り下ろし速度
-    void Start ()
+    void Start()
     {
-        transForm = this.GetComponent<Transform> ();
+        transForm = this.GetComponent<Transform>();
     }
-    void Update ()
+    void Update()
     {
-        if (Input.GetKey (KeyCode.Mouse0))
+
+        if (Input.GetKey(KeyCode.Mouse0))
         {
-            if (transForm.localEulerAngles.x < 90) //90度以上行かないようにしてる
+            if (transForm.localEulerAngles.x < 95) //90度以上行かないようにしてる→衝突検証用に数値上げてそのまま
             {
-                transForm.Rotate (new Vector3 (moveSpeed, 0, 0));
+                transForm.Rotate(new Vector3(moveSpeed, 0, 0));
             }
 
         }
-        if (Input.GetKeyUp (KeyCode.Mouse0)) transForm.localEulerAngles = Vector3.zero; //初期値に戻る
+        if (Input.GetKeyUp(KeyCode.Mouse0)) transForm.localEulerAngles = Vector3.zero; //初期値に戻る
+    }
+    //ハンマーと土管の当たり判定
+    void OnCollisionStay(Collision kan)
+    {
+        if(kan.gameObject.tag == "Kan") //Kanは土管用のTAG
+        {
+            transForm.localEulerAngles = new Vector3(90f,0,0);
+            Debug.Log("Hit" ); //デバッグログ邪魔だったら消してOK
+        }
     }
 }
