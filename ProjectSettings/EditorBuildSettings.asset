@@ -5,28 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/BOSS/Title.unity
-    guid: 8f545e91d7a82584a902599fb6de5b6c
+    path: Assets/Scenes/Main/Title.unity
+    guid: 756fce1eac6ae784191bb2a59193dbef
   - enabled: 1
-    path: Assets/Scenes/BOSS/LevelSelect.unity
-    guid: 4305495b598d9df479869d2dea0ab848
+    path: Assets/Scenes/Main/LevelSelect.unity
+    guid: 520485fd57a132047a9ee3d8cbaa406a
   - enabled: 1
-    path: Assets/Scenes/BOSS/EasySetting.unity
-    guid: be9a31f09671ce844a2bc99e23754c70
+    path: Assets/Scenes/Main/EasySetting.unity
+    guid: 7ce53982983309e49a5624c3ce912285
   - enabled: 1
-    path: Assets/Scenes/BOSS/NormalSetting.unity
-    guid: 1c4a7d7ba13c5f647b1a5b35ec42039f
+    path: Assets/Scenes/Main/HardSetting.unity
+    guid: 34aa384c27469834faf406f4b364eea9
   - enabled: 1
-    path: Assets/Scenes/BOSS/HardSetting.unity
-    guid: 491491972694727478cbb79223b5804c
+    path: Assets/Scenes/Main/NormalSetting.unity
+    guid: 4ff1e73333b74d1499c1ccc2413e2162
   - enabled: 1
-    path: Assets/Scenes/YukiNarayama/RandomMogura.unity
-    guid: 0ef6bd5ff51034480b6b0d143d3c3e2b
+    path: Assets/Scenes/Main/Main.unity
+    guid: d9a0cbdbc801d764e9d272b4c107b315
   m_configObjects: {}
