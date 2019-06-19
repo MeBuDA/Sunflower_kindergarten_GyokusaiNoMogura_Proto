@@ -6,7 +6,12 @@ using UnityEngine;
 public class MoguraObjectManager : MonoBehaviour
 {
     [SerializeField] int randomCountMax = 100; //出現頻度、上げると全然でなくて下げるとめっちゃ出る
-    public GameObject[] moguraObject; //MoguraObjectのPrefabをアタッチして
+	public int SelectMogura = 25; //選ぶモグラの確率の分母
+	public int NomalMoguraSelect = 15;//普通のモグラが選ばれる確率の分子
+	public int BossMoguraSelect = 5;//ボスモグラが選ばれる確率の分子
+	public int GoldMoguraSelect = 1;//ゴールドモグラが選べれる確率の分子
+	public int OjisanSelect = 4;//おじさんが選ばれる確率の分s
+	public GameObject[] moguraObject; //MoguraObjectのPrefabをアタッチして
     public MoguraPosition.Mogura[] moguraPosition;//= new MoguraPosition.Mogura[size];
 	
 
@@ -81,21 +86,25 @@ public class MoguraObjectManager : MonoBehaviour
             }
 			void Select()//どのモグラを出すかを決める
 			{
-				int RandomSelect = Random.Range(0, 25);
+				int RandomSelect = Random.Range(0, SelectMogura);
 
-				if (RandomSelect < 15)
+				int x1 = NomalMoguraSelect + BossMoguraSelect;
+				int x2 = x1 + GoldMoguraSelect;
+				int x3 = x2 + OjisanSelect;
+
+				if (RandomSelect < NomalMoguraSelect)
 				{
 					moguraPosition[moguraPopPosition].MoguraOut();
 				}
-				else if (14 < RandomSelect && RandomSelect < 20)
+				else if (NomalMoguraSelect <= RandomSelect && RandomSelect < x1)
 				{
 					moguraPosition[moguraPopPosition].BossMoguraOut();
 				}
-				else if (19 < RandomSelect && RandomSelect < 21)
+				else if (x1 <= RandomSelect && RandomSelect < x2)
 				{
 					moguraPosition[moguraPopPosition].GoldMoguraOut();
 				}
-				else if (20 < RandomSelect && RandomSelect < 26)
+				else if (x2 <= RandomSelect && RandomSelect < x3)
 				{
 					moguraPosition[moguraPopPosition].OjisanOut();
 				}
