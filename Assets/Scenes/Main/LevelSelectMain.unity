@@ -559,7 +559,7 @@ PrefabInstance:
     - target: {fileID: 8921917101955474941, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
       propertyPath: scenemoveNextScene
-      value: NomalSetting
+      value: NormalSettingMain
       objectReference: {fileID: 0}
     - target: {fileID: 8912167718723962327, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
@@ -648,7 +648,7 @@ PrefabInstance:
     - target: {fileID: 8921917101955474941, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
       propertyPath: scenemoveNextScene
-      value: HardSetting
+      value: HardSettingMain
       objectReference: {fileID: 0}
     - target: {fileID: 8912167718723962327, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
@@ -732,7 +732,7 @@ PrefabInstance:
     - target: {fileID: 8921917101955474941, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
       propertyPath: scenemoveNextScene
-      value: EasySetting
+      value: EasySettingMain
       objectReference: {fileID: 0}
     - target: {fileID: 8912167718723962327, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
