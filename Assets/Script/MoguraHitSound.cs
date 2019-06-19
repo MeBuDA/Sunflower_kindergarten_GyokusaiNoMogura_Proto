@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HammerHitSound : MonoBehaviour{
+public class MoguraHitSound : MonoBehaviour{
     private AudioSource hitSuccess;
 
     void Start(){
