@@ -5,88 +5,74 @@ using UnityEngine;
 
 public class MoguraObjectManager : MonoBehaviour
 {
-    [SerializeField] int randomCountMax = 100; //出現頻度、上げると全然でなくて下げるとめっちゃ出る
-	public int SelectMogura = 25; //選ぶモグラの確率の分母
-	public int NomalMoguraSelect = 15;//普通のモグラが選ばれる確率の分子
-	public int BossMoguraSelect = 5;//ボスモグラが選ばれる確率の分子
-	public int GoldMoguraSelect = 1;//ゴールドモグラが選べれる確率の分子
-	public int OjisanSelect = 4;//おじさんが選ばれる確率の分s
-	public GameObject[] moguraObject; //MoguraObjectのPrefabをアタッチして
-    public MoguraPosition.Mogura[] moguraPosition;//= new MoguraPosition.Mogura[size];
-	
+	[SerializeField] int randomCountMax = 100; //出現頻度、上げると全然でなくて下げるとめっちゃ出る
+	[SerializeField] int SelectMogura = 25; //選ぶモグラの確率の分母
+	[SerializeField] int NomalMoguraSelect = 15; //普通のモグラが選ばれる確率の分子
+	[SerializeField] int BossMoguraSelect = 5; //ボスモグラが選ばれる確率の分子
+	[SerializeField] int GoldMoguraSelect = 1; //ゴールドモグラが選べれる確率の分子
+	[SerializeField] int OjisanSelect = 4; //おじさんが選ばれる確率の分s
+	public MoguraPosition.Mogura[] moguraPosition; //moguraObjectのアタッチ
 
-	void Awake ()
-    {
-        for (int i = 0; moguraObject.Length > i; i++)
-        {
-           moguraPosition[i] =  moguraObject[i].GetComponent<Mogura> ();
-        }
+	void Update ()
+	{
+		int randomCount = Random.Range (1, randomCountMax);
 
-    }
-
-	
-    void Update ()
-    {
-        int randomCount = Random.Range (1, randomCountMax);
-		
-
-        if (randomCount == 1)
-        {
-            int moguraPopPosition = Random.Range (0, moguraPosition.Length);
-			
+		if (randomCount == 1)
+		{
+			int moguraPopPosition = Random.Range (0, moguraPosition.Length);
 
 			//とりあえず13個まで対応
 			switch (moguraPopPosition)
-            {
-				 
-                case 0:
-					Select();
-                    break;
+			{
+
+				case 0:
+					Select ();
+					break;
 				case 1:
-					Select();
+					Select ();
 					break;
 				case 2:
-					Select();
+					Select ();
 					break;
 				case 3:
-					Select();
+					Select ();
 					break;
 				case 4:
-					Select();
+					Select ();
 					break;
 				case 5:
-					Select();
+					Select ();
 					break;
 				case 6:
-					Select();
+					Select ();
 					break;
 				case 7:
-					Select();
+					Select ();
 					break;
 				case 8:
-					Select();
+					Select ();
 					break;
 				case 9:
-					Select();
+					Select ();
 					break;
 				case 10:
-					Select();
+					Select ();
 					break;
 				case 11:
-					Select();
+					Select ();
 					break;
 				case 12:
-					Select();
+					Select ();
 					break;
 				case 13:
-					Select();
+					Select ();
 					break;
 				default:
-                    break;
-            }
-			void Select()//どのモグラを出すかを決める
+					break;
+			}
+			void Select () //どのモグラを出すかを決める
 			{
-				int RandomSelect = Random.Range(0, SelectMogura);
+				int RandomSelect = Random.Range (0, SelectMogura);
 
 				int x1 = NomalMoguraSelect + BossMoguraSelect;
 				int x2 = x1 + GoldMoguraSelect;
@@ -94,22 +80,22 @@ public class MoguraObjectManager : MonoBehaviour
 
 				if (RandomSelect < NomalMoguraSelect)
 				{
-					moguraPosition[moguraPopPosition].MoguraOut();
+					moguraPosition[moguraPopPosition].MoguraOut ();
 				}
 				else if (NomalMoguraSelect <= RandomSelect && RandomSelect < x1)
 				{
-					moguraPosition[moguraPopPosition].BossMoguraOut();
+					moguraPosition[moguraPopPosition].BossMoguraOut ();
 				}
 				else if (x1 <= RandomSelect && RandomSelect < x2)
 				{
-					moguraPosition[moguraPopPosition].GoldMoguraOut();
+					moguraPosition[moguraPopPosition].GoldMoguraOut ();
 				}
 				else if (x2 <= RandomSelect && RandomSelect < x3)
 				{
-					moguraPosition[moguraPopPosition].OjisanOut();
+					moguraPosition[moguraPopPosition].OjisanOut ();
 				}
 
 			}
 		}
-    }
+	}
 }
