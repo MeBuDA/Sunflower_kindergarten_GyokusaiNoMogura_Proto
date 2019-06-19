@@ -9,6 +9,7 @@ namespace MoguraPosition //MoguraObjectManager.csで使う
     public class Mogura : MonoBehaviour
     {
         private Animator animator;
+
         void Awake ()
         {
             animator = this.GetComponent<Animator> ();
@@ -18,5 +19,18 @@ namespace MoguraPosition //MoguraObjectManager.csで使う
         {
             animator.SetTrigger ("MoguraOut");
         }
-    }
+		public void BossMoguraOut()
+		{
+			animator.SetTrigger("BossMoguraOut");
+		}
+		public void GoldMoguraOut()
+		{
+			animator.SetTrigger("GoldMoguraOut");
+		}
+		public void OjisanOut()
+		{
+			animator.SetTrigger("OjisanOut");
+		}
+	}
 }
+
