@@ -275,6 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658657417165726912}
   - component: {fileID: 3346479732132251624}
+  - component: {fileID: 9098438386970691581}
   m_Layer: 0
   m_Name: HamSwing(CriAtomSource)
   m_TagString: Untagged
@@ -317,6 +318,20 @@ MonoBehaviour:
   _pitch: 0
   _androidUseLowLatencyVoicePool: 0
   need_to_player_update_all: 1
+--- !u!114 &9098438386970691581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358897530700726448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe778a48cecafe42bb95ec85e73eb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refSpeed: 13
+  swingCounter: 0
 --- !u!1 &3957782932888425400
 GameObject:
   m_ObjectHideFlags: 0

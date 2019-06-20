@@ -8,8 +8,8 @@ public class HammerSwingSound : MonoBehaviour{
 
     private Vector3 latestPos;
     private Vector3 deltaPosition;
-    private float speed;
-    public float refSpeed;
+    public float speed;
+    public float refSpeed = 13.0f;
     public int swingCounter = 0;
 
     void Start(){
