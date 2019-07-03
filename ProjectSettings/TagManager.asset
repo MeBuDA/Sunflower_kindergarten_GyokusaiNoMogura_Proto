@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Hammer
   - Hummer
+  - Nomal
+  - Boss
+  - Gold
+  - Mob
   layers:
   - Default
   - TransparentFX

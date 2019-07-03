@@ -44,7 +44,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomCountMax: 100
-  moguraObject:
+  SelectMogura: 25
+  NomalMoguraSelect: 15
+  BossMoguraSelect: 5
+  GoldMoguraSelect: 1
+  OjisanSelect: 4
+  moguraPosition:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
