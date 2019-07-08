@@ -15,9 +15,9 @@ public class PlayerDamage : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter(Collision att)
+    void OnTriggerEnter(Collider att)
     {
-        if(att.gameObject.name == "Turuhasi")
+        if(att.gameObject.CompareTag("MoguraWeapon"))//モグラ武器のタグ
         {
             Debug.Log("Turuhasi");
         }
