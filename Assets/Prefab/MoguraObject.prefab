@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a05c28b70e8653446bee03aba2c375d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameOfMoguraObject: 
+  thisObjectScore: 500
 --- !u!1 &3497459455243238376
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a05c28b70e8653446bee03aba2c375d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameOfMoguraObject: 
+  thisObjectScore: -400
 --- !u!1 &5762799238966640751
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a05c28b70e8653446bee03aba2c375d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameOfMoguraObject: 
+  thisObjectScore: 100
 --- !u!1 &5762799240742577905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,4 +1132,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a05c28b70e8653446bee03aba2c375d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameOfMoguraObject: 
+  thisObjectScore: 1000

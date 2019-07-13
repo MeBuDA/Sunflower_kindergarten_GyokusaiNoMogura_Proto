@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using SceroManager;
+
 public class Score : MonoBehaviour
 {
-    private string thisObjectName;
-
-    private int thisObjectScore;
+    public int thisObjectScore; //モグラごとのスコアを打ち込む
 
     private GameObject moguraObject;
-
-    public string nameOfMoguraObject;//この変数にmoguraObjectの名前を打ち込む(めんどいのはわかるけどこれだけはお願い♥)
 
     private Animator animator;
 
@@ -18,6 +16,41 @@ public class Score : MonoBehaviour
 
     void Start()
     {
+        moguraObject = transform.root.gameObject;  //MoguraObjectを取得
+
+        animator = moguraObject.GetComponent<Animator>(); //Animatorを取得
+
+        attackFlag = true; //攻撃可能状態
+    }
+
+    void Update()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("MoguraKanState")) //モグラ(全種)が待機状態のAnimationの場合
+        {
+            attackFlag = true; //攻撃可能状態
+        }
+    }
+    void OnTriggerEnter(Collider other) //特定のコリジョンに触れた瞬間発動
+    {
+        if (other.gameObject.CompareTag("Hammer")) //特定のTagの場合
+        {
+            if (!(animator.GetCurrentAnimatorStateInfo(0).IsName("MoguraKanState"))) //モグラ(全種)が待機状態でないAnimetionの場合
+            {
+                if (attackFlag == true) //攻撃可能状態の場合
+                {
+                    //FindObjectOfType<ScoreManager>().
+                    ScoreManager.AddScore(thisObjectScore); //ScoreManagerスクリプトのthisObjectScoreメソッド起動
+                    attackFlag = false; //攻撃不可状態
+                }
+            }
+        }
+    }
+}
+
+/*
+//遺品置き場(始)
+    private string thisObjectName;
+
         thisObjectName = this.gameObject.name; //付けているオブジェクトの名前を参照
 
         //モグラの種類によって叩いたときのスコアを設定(始)
@@ -39,24 +72,12 @@ public class Score : MonoBehaviour
         }
         //モグラの種類によって叩いたときのスコアを設定(終)
 
-        moguraObject = GameObject.Find(nameOfMoguraObject); //MoguraObjectを取得
 
-        animator = moguraObject.GetComponent<Animator>(); //Animatorを取得
 
-        attackFlag = true; //攻撃可能状態
-    }
+    public string nameOfMoguraObject;//この変数にmoguraObjectの名前を打ち込む(めんどいのはわかるけどこれだけはお願い♥)
 
-    void Update()
-    {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("MoguraKanState")) //モグラ(全種)が待機状態のAnimationの場合
-        {
-            attackFlag = true; //攻撃可能状態
-        }
-    }
-    void OnTriggerEnter(Collider other) //特定のコリジョンに触れた瞬間発動
-    {
-        if (other.gameObject.CompareTag("Hammer")) //特定のTagの場合
-        {
+    moguraObject = GameObject.Find(nameOfMoguraObject); //MoguraObjectを取得
+
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("MoguraKanOut")  ||  //条件文(始)
                 animator.GetCurrentAnimatorStateInfo(0).IsName("MoguraKanIn")   ||
                 animator.GetCurrentAnimatorStateInfo(0).IsName("BossMoguraOut") ||
@@ -65,13 +86,5 @@ public class Score : MonoBehaviour
                 animator.GetCurrentAnimatorStateInfo(0).IsName("GoldMoguraIn")  ||
                 animator.GetCurrentAnimatorStateInfo(0).IsName("OjisanOut")     ||
                 animator.GetCurrentAnimatorStateInfo(0).IsName("OjisanIn")        ) //条件文(終)
-            {
-                if (attackFlag == true) //攻撃可能状態の場合
-                {
-                    FindObjectOfType<ScoreManager>().AddScore(thisObjectScore); //ScoreManagerスクリプトのthisObjectScoreメソッド起動
-                    attackFlag = false; //攻撃不可状態
-                }
-            }
-        }
-    }
-}
+//遺品置き場(終)
+*/

@@ -2,33 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
-public class ScoreManager : MonoBehaviour
+namespace SceroManager
 {
-    public Text scoreLabel;
-    public float scoreCount;
-
-    void Start()
+    public class ScoreManager : MonoBehaviour
     {
-        scoreCount = 0; //スコアリセット
+    
+        public static float scoreCount;
 
-        scoreLabel.text = "Score : " + scoreCount; //スコア表示
-    }
+        public TextMesh textMesh;
 
-    public void AddScore(int addPoint) //Scoreスクリプトから起動
-    {
-        scoreCount = scoreCount + addPoint; //スコア加算
-    }
-
-    void Update()
-    {
-        if (scoreCount < 0) //スコアが0未満になった時に発動(スコア0の時に減点したとき用)
+        void Start()
         {
-            scoreCount = 0;
+            scoreCount = 0; //スコアリセット
         }
 
-        scoreLabel.text = "Score : " + scoreCount; //スコア表示
+        public static void AddScore(int addPoint) //Scoreスクリプトから起動
+        {
+            scoreCount = scoreCount + addPoint; //スコア加算
+        }
+
+        void Update()
+        {
+            if (scoreCount < 0) //スコアが0未満になった時に発動(スコア0の時に減点したとき用)
+            {
+                scoreCount = 0;
+            }
+
+            textMesh.text = "Score\n" + scoreCount;
+        }
     }
 }
