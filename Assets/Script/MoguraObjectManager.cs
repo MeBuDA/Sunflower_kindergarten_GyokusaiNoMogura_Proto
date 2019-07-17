@@ -13,6 +13,7 @@ public class MoguraObjectManager : MonoBehaviour
 	[SerializeField] int OjisanSelect = 4; //おじさんが選ばれる確率の分s
 	public MoguraPosition.Mogura[] moguraPosition; //moguraObjectのアタッチ
 
+
 	void Update ()
 	{
 		int randomCount = Random.Range (1, randomCountMax);
@@ -70,6 +71,7 @@ public class MoguraObjectManager : MonoBehaviour
 				default:
 					break;
 			}
+			
 			void Select () //どのモグラを出すかを決める
 			{
 				int RandomSelect = Random.Range (0, SelectMogura);
