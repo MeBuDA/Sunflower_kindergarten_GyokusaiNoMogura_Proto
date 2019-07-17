@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7782605413512337432}
   - component: {fileID: 1484176079177935599}
   - component: {fileID: 2962461712872301976}
+  - component: {fileID: 8920422729596803384}
   m_Layer: 0
   m_Name: 'BossMogura '
   m_TagString: Boss
@@ -233,6 +234,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8920422729596803384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300768230031724932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05c28b70e8653446bee03aba2c375d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObjectScore: 500
 --- !u!1 &3497459455243238376
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +263,7 @@ GameObject:
   - component: {fileID: 1743353950701441177}
   - component: {fileID: 5859985608662694380}
   - component: {fileID: 324329775379126695}
+  - component: {fileID: 2679251298732817319}
   m_Layer: 0
   m_Name: Ojisan
   m_TagString: Mob
@@ -626,6 +641,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7c5c858f82b050f4a8dbd69fae2389e9, type: 3}
+
   m_PlayOnAwake: 0
   m_Volume: 0.6
   m_Pitch: 1
