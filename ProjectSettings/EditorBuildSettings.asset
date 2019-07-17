@@ -19,26 +19,8 @@ EditorBuildSettings:
     guid: 34aa384c27469834faf406f4b364eea9
   - enabled: 1
     path: Assets/Scenes/Main/NormalSettingMain.unity
-    guid: 4ff1e73333b74d1499c1ccc2413e2162
+    guid: 5883f2e87fff4944bb4136b3fd38ab8c
   - enabled: 1
-    path: Assets/Scenes/BOSS/Main2BOSS.unity
-    guid: d9a0cbdbc801d764e9d272b4c107b315
-  - enabled: 1
-    path: Assets/Scenes/BOSS/EasySettingBOSS.unity
-    guid: bdaf1b99eadb8ef4e9eac504d64b33b9
-  - enabled: 1
-    path: Assets/Scenes/BOSS/HardSettingBOSS.unity
-    guid: 88cdd6dc9edcd5d419dbfe89118299ae
-  - enabled: 1
-    path: Assets/Scenes/BOSS/LevelSelectBOSS.unity
-    guid: ce98086a0573d1042b608b21bf24a7ce
-  - enabled: 1
-    path: Assets/Scenes/BOSS/MainBOSS.unity
-    guid: ea9f358385a2d4c46996e5c7650a1327
-  - enabled: 1
-    path: Assets/Scenes/BOSS/NormalSettingBOSS.unity
-    guid: 87b4482640ef2e84d8b0d667816e5bc0
-  - enabled: 1
-    path: Assets/Scenes/BOSS/TitleBOSS.unity
-    guid: 842b25eec976dc740a2c32845431a88b
+    path: Assets/Scenes/Main/MainMain.unity
+    guid: 6886d6d249c2e5a4eb362318d6053a33
   m_configObjects: {}
