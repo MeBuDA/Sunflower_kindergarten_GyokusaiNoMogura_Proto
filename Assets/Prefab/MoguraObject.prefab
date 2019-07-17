@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7782605413512337432}
   - component: {fileID: 1484176079177935599}
   - component: {fileID: 2962461712872301976}
+  - component: {fileID: 8920422729596803384}
   m_Layer: 0
   m_Name: 'BossMogura '
   m_TagString: Boss
@@ -233,6 +234,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8920422729596803384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300768230031724932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05c28b70e8653446bee03aba2c375d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObjectScore: 500
 --- !u!1 &3497459455243238376
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +263,7 @@ GameObject:
   - component: {fileID: 1743353950701441177}
   - component: {fileID: 5859985608662694380}
   - component: {fileID: 324329775379126695}
+  - component: {fileID: 2679251298732817319}
   m_Layer: 0
   m_Name: Ojisan
   m_TagString: Mob
@@ -466,6 +481,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2679251298732817319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3497459455243238376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05c28b70e8653446bee03aba2c375d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObjectScore: -400
 --- !u!1 &5762799238966640751
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +587,7 @@ GameObject:
   - component: {fileID: 5762799240353168769}
   - component: {fileID: 3908922779903057216}
   - component: {fileID: 6391772317677090556}
+  - component: {fileID: 8286393741905568920}
   m_Layer: 0
   m_Name: Mogura
   m_TagString: Nomal
@@ -776,6 +805,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8286393741905568920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762799240353168511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05c28b70e8653446bee03aba2c375d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObjectScore: 100
 --- !u!1 &5762799240742577905
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +902,7 @@ GameObject:
   - component: {fileID: 7069306550780013761}
   - component: {fileID: 2007572096220596737}
   - component: {fileID: 7156558685801054010}
+  - component: {fileID: 6915639949735349114}
   m_Layer: 0
   m_Name: 'GoldMogura '
   m_TagString: Gold
@@ -1077,3 +1120,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6915639949735349114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258202767363499585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05c28b70e8653446bee03aba2c375d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObjectScore: 1000
