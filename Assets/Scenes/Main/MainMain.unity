@@ -1258,7 +1258,7 @@ PrefabInstance:
     - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: oculusGo
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf45fb9f77bc304b851b5b4786a006d, type: 3}
@@ -1473,6 +1473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140543904918776166, guid: e015ba7e579644d0b8d2fa02f3b2a458,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3346479732132251624, guid: e015ba7e579644d0b8d2fa02f3b2a458,
         type: 3}
