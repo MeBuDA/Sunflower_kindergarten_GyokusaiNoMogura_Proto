@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
---- !u!1 &1358897530700726448
+--- !u!1 &1820533238710139347
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -273,9 +273,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 658657417165726912}
-  - component: {fileID: 3346479732132251624}
-  - component: {fileID: 9098438386970691581}
+  - component: {fileID: 2745647685674242308}
+  - component: {fileID: 6994681706986582371}
+  - component: {fileID: 2689311490231785243}
   m_Layer: 0
   m_Name: HamSwing(CriAtomSource)
   m_TagString: Untagged
@@ -283,27 +283,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &658657417165726912
+--- !u!4 &2745647685674242308
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358897530700726448}
+  m_GameObject: {fileID: 1820533238710139347}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.01}
+  m_LocalPosition: {x: 0.03, y: 0.04, z: -0}
   m_LocalScale: {x: 3.333333, y: 3.3333328, z: 3.3333328}
   m_Children: []
   m_Father: {fileID: 7028008401109943580}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3346479732132251624
+--- !u!114 &6994681706986582371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358897530700726448}
+  m_GameObject: {fileID: 1820533238710139347}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1e631c3b9947b54c823c6853a05529c, type: 3}
@@ -311,25 +311,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playOnStart: 0
   _cueName: HamSwing
-  _cueSheet: PlaySE
-  _use3dPositioning: 0
+  _cueSheet: PlayMove
+  _use3dPositioning: 1
   _loop: 0
   _volume: 1
   _pitch: 0
   _androidUseLowLatencyVoicePool: 0
   need_to_player_update_all: 1
---- !u!114 &9098438386970691581
+--- !u!114 &2689311490231785243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358897530700726448}
+  m_GameObject: {fileID: 1820533238710139347}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efe778a48cecafe42bb95ec85e73eb56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
   refSpeed: 13
   swingCounter: 0
 --- !u!1 &3957782932888425400
@@ -362,7 +363,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.184, z: 0}
   m_LocalScale: {x: 0.3, y: 0.30000013, z: 0.30000013}
   m_Children:
-  - {fileID: 658657417165726912}
+  - {fileID: 2745647685674242308}
   m_Father: {fileID: 1140543904918776161}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
