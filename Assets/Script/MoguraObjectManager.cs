@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MoguraPosition; //Mogura.csの情報を取ってきてる
 using UnityEngine;
+using MoguraAttackAni;
 
 public class MoguraObjectManager : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class MoguraObjectManager : MonoBehaviour
 	[SerializeField] int BossMoguraSelect = 5; //ボスモグラが選ばれる確率の分子
 	[SerializeField] int GoldMoguraSelect = 1; //ゴールドモグラが選べれる確率の分子
 	[SerializeField] int OjisanSelect = 4; //おじさんが選ばれる確率の分s
-	public MoguraPosition.Mogura[] moguraPosition; //moguraObjectのアタッチ
+	public Mogura[] moguraPosition; //moguraObjectのアタッチ
+    public MoguraAttack[] moguraAttackAni;
 
 
 	void Update ()
@@ -83,10 +85,12 @@ public class MoguraObjectManager : MonoBehaviour
 				if (RandomSelect < NomalMoguraSelect)
 				{
 					moguraPosition[moguraPopPosition].MoguraOut ();
+                    moguraAttackAni[moguraPopPosition].MguAttack("Mogura");
 				}
 				else if (NomalMoguraSelect <= RandomSelect && RandomSelect < x1)
 				{
 					moguraPosition[moguraPopPosition].BossMoguraOut ();
+                    moguraAttackAni[moguraPopPosition].MguAttack("BOSS");
 				}
 				else if (x1 <= RandomSelect && RandomSelect < x2)
 				{
