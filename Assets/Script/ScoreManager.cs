@@ -8,8 +8,9 @@ namespace SceroManager
     {
     
         public static float scoreCount;
-
-        public TextMesh textMesh;
+		public static float AttackMoguraCount;//モグラに攻撃した回数
+		public static float AttackOjisanCount;//おじさんに攻撃した回数
+		public TextMesh textMesh;
 
         void Start()
         {
@@ -18,7 +19,15 @@ namespace SceroManager
 
         public static void AddScore(int addPoint) //Scoreスクリプトから起動
         {
-            scoreCount = scoreCount + addPoint; //スコア加算
+			if (addPoint > 0)//スコアが－か＋かで店長とモグラを判別
+			{
+				AttackMoguraCount++;
+			}
+			else if (addPoint < 0)
+			{
+				AttackOjisanCount++;
+			}
+			scoreCount = scoreCount + addPoint; //スコア加算
         }
 
         void Update()
@@ -30,5 +39,17 @@ namespace SceroManager
 
             textMesh.text = "Score\n" + scoreCount;
         }
-    }
+		public static float GetScore()//スコアとカウントを他シーンに拝借
+		{
+			return scoreCount;
+		}
+		public static float GetAttacMoguraCount()
+		{
+			return AttackMoguraCount;
+		}
+		public static float GetAttackOjisanCount()
+		{
+			return AttackOjisanCount;
+		}
+	}
 }
