@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -933,7 +933,7 @@ PrefabInstance:
         type: 3}
       propertyPath: moguraAttackAni.Array.data[3]
       value: 
-      objectReference: {fileID: 1078334524}
+      objectReference: {fileID: 925231086}
     - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
         type: 3}
       propertyPath: moguraAttackAni.Array.data[4]
@@ -1088,18 +1088,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1078334524 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2458102514841466170, guid: 168387c3c1e5c44219444871b7da9682,
-    type: 3}
-  m_PrefabInstance: {fileID: 399712669}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46d6bc1b0c36dd94f837270e10c7aa9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1093097988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,18 +1958,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a2c15c51e066d24891888fb139559a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1868724298 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2458102514841466170, guid: 168387c3c1e5c44219444871b7da9682,
-    type: 3}
-  m_PrefabInstance: {fileID: 559842036}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46d6bc1b0c36dd94f837270e10c7aa9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2061764611
