@@ -10,13 +10,16 @@ public class RocketMoguraObjectManager : MonoBehaviour
     [SerializeField] int randomCountMax_Rocket = 100;
     public RocketMoguraPosition.RocketMogura[] rocketMoguraPosition;
 
+    private int randomCountRocket_Rocket;
+    private int rocketMoguraPopPosition;
+
     void Update()
     {
-        int randomCountRocket_Rocket = Random.Range(1, randomCountMax_Rocket);
+        randomCountRocket_Rocket = Random.Range(1, randomCountMax_Rocket);
 
         if (randomCountRocket_Rocket == 1)
         {
-            int rocketMoguraPopPosition = Random.Range(0, rocketMoguraPosition.Length);
+            rocketMoguraPopPosition = Random.Range(0, rocketMoguraPosition.Length);
 
             switch (rocketMoguraPopPosition)
             {
@@ -36,11 +39,11 @@ public class RocketMoguraObjectManager : MonoBehaviour
                     Fire();
                     break;
             }
-
-            void Fire()
-            {
-                rocketMoguraPosition[rocketMoguraPopPosition].RocketMoguraFire();
-            }
         }
+    }
+
+    void Fire()
+    {
+        rocketMoguraPosition[rocketMoguraPopPosition].RocketMoguraFire();
     }
 }

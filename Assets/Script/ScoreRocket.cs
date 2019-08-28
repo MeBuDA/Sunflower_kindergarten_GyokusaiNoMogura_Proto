@@ -28,16 +28,10 @@ public class ScoreRocket : MonoBehaviour
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("RocketMoguraKanState")) //ロケットモグラが待機状態のAnimationの場合
         {
             attackRocketFlag = true; //攻撃可能状態
-            Debug.Log("aaaaa");
         }
     }
     void OnTriggerEnter(Collider other) //特定のコリジョンに触れた瞬間発動
     {
-        //if (other.gameObject.CompareTag("RocketMoguraBackPoint")) //特定のTagの場合
-        //{
-        //    attackRocketFlag = true; //攻撃可能状態
-        //}
-
         if (other.gameObject.CompareTag("Hammer")) //特定のTagの場合
         {
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("RocketMoguraFire")) //ロケットモグラが発射状態のAnimetionの場合
@@ -46,7 +40,6 @@ public class ScoreRocket : MonoBehaviour
                 {
                     //FindObjectOfType<ScoreManager>().
                     ScoreManager.AddScore(thisObjectScore); //ScoreManagerスクリプトのthisObjectScoreメソッド起動
-                    Debug.Log("bbbbb");
                     attackRocketFlag = false; //攻撃不可状態
                 }
             }
