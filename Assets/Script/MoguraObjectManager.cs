@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MoguraPosition; //Mogura.csの情報を取ってきてる
 using UnityEngine;
 using MoguraAttackAni;
+using UnityEngine.SceneManagement;//シーン移動のため
 
 public class MoguraObjectManager : MonoBehaviour
 {
@@ -12,6 +13,11 @@ public class MoguraObjectManager : MonoBehaviour
 	[SerializeField] int BossMoguraSelect = 5; //ボスモグラが選ばれる確率の分子
 	[SerializeField] int GoldMoguraSelect = 1; //ゴールドモグラが選べれる確率の分子
 	[SerializeField] int OjisanSelect = 4; //おじさんが選ばれる確率の分s
+	[SerializeField] int TimeLimit = 120; //制限時間（秒単位）
+	public GameObject Switch;//すたーとぼたん
+	float startDateTime;
+	public static int SelectMoguraCount;
+	public static int SelectOjisanCount;
 	public Mogura[] moguraPosition; //moguraObjectのアタッチ
     public MoguraAttack[] moguraAttackAni;
 
@@ -20,88 +26,119 @@ public class MoguraObjectManager : MonoBehaviour
 	{
 		int randomCount = Random.Range (1, randomCountMax);
 
-		if (randomCount == 1)
+		Transform StartPos = Switch.transform;//StartSwitchの位置を取得
+		Vector3 pos = StartPos.position;
+		if (pos.y > -100)
+		{//スタートボタン押してからの時間をはかるため
+			startDateTime = Time.time;
+		}
+		else if (pos.y < -100)//スイッチの位置によってゲーム開始
 		{
-			int moguraPopPosition = Random.Range (0, moguraPosition.Length);
-
-			//とりあえず13個まで対応
-			switch (moguraPopPosition)
-			{
-
-				case 0:
-					Select ();
-					break;
-				case 1:
-					Select ();
-					break;
-				case 2:
-					Select ();
-					break;
-				case 3:
-					Select ();
-					break;
-				case 4:
-					Select ();
-					break;
-				case 5:
-					Select ();
-					break;
-				case 6:
-					Select ();
-					break;
-				case 7:
-					Select ();
-					break;
-				case 8:
-					Select ();
-					break;
-				case 9:
-					Select ();
-					break;
-				case 10:
-					Select ();
-					break;
-				case 11:
-					Select ();
-					break;
-				case 12:
-					Select ();
-					break;
-				case 13:
-					Select ();
-					break;
-				default:
-					break;
-			}
 			
-			void Select () //どのモグラを出すかを決める
+			// 制限時間		
+			var time = Time.time - startDateTime;
+			float seconds = (int)time;
+			if (seconds > TimeLimit)//制限時間が来たら
 			{
-				int RandomSelect = Random.Range (0, SelectMogura);
+				SceneManager.LoadScene("TotalScore");//結果発表～
+			}
+			Debug.Log(time);
+			//Debug.Log("start");
+			if (randomCount == 1)
+			{
+				int moguraPopPosition = Random.Range(0, moguraPosition.Length);
 
-				int x1 = NomalMoguraSelect + BossMoguraSelect;
-				int x2 = x1 + GoldMoguraSelect;
-				int x3 = x2 + OjisanSelect;
+				//とりあえず13個まで対応
+				switch (moguraPopPosition)
+				{
 
-				if (RandomSelect < NomalMoguraSelect)
-				{
-					moguraPosition[moguraPopPosition].MoguraOut ();
-                    moguraAttackAni[moguraPopPosition].MguAttack("Mogura");
-				}
-				else if (NomalMoguraSelect <= RandomSelect && RandomSelect < x1)
-				{
-					moguraPosition[moguraPopPosition].BossMoguraOut ();
-                    moguraAttackAni[moguraPopPosition].MguAttack("BOSS");
-				}
-				else if (x1 <= RandomSelect && RandomSelect < x2)
-				{
-					moguraPosition[moguraPopPosition].GoldMoguraOut ();
-				}
-				else if (x2 <= RandomSelect && RandomSelect < x3)
-				{
-					moguraPosition[moguraPopPosition].OjisanOut ();
+					case 0:
+						Select();
+						break;
+					case 1:
+						Select();
+						break;
+					case 2:
+						Select();
+						break;
+					case 3:
+						Select();
+						break;
+					case 4:
+						Select();
+						break;
+					case 5:
+						Select();
+						break;
+					case 6:
+						Select();
+						break;
+					case 7:
+						Select();
+						break;
+					case 8:
+						Select();
+						break;
+					case 9:
+						Select();
+						break;
+					case 10:
+						Select();
+						break;
+					case 11:
+						Select();
+						break;
+					case 12:
+						Select();
+						break;
+					case 13:
+						Select();
+						break;
+					default:
+						break;
 				}
 
+				void Select() //どのモグラを出すかを決める
+				{
+					int RandomSelect = Random.Range(0, SelectMogura);
+
+					int x1 = NomalMoguraSelect + BossMoguraSelect;
+					int x2 = x1 + GoldMoguraSelect;
+					int x3 = x2 + OjisanSelect;
+
+					if (RandomSelect < NomalMoguraSelect)
+					{
+						moguraPosition[moguraPopPosition].MoguraOut();
+						moguraAttackAni[moguraPopPosition].MguAttack("Mogura");
+						SelectMoguraCount++;
+					}
+					else if (NomalMoguraSelect <= RandomSelect && RandomSelect < x1)
+					{
+						moguraPosition[moguraPopPosition].BossMoguraOut();
+						moguraAttackAni[moguraPopPosition].MguAttack("BOSS");
+						SelectMoguraCount++;
+					}
+					else if (x1 <= RandomSelect && RandomSelect < x2)
+					{
+						moguraPosition[moguraPopPosition].GoldMoguraOut();
+						SelectMoguraCount++;
+					}
+					else if (x2 <= RandomSelect && RandomSelect < x3)
+					{
+						moguraPosition[moguraPopPosition].OjisanOut();
+						SelectOjisanCount++;
+					}
+
+				}
 			}
 		}
+	}
+	public static float GetMoguraCount()//モグラが選ばれた回数と店長が選ばれた回数を他シーンにもっていくためのもの
+	{
+		return SelectMoguraCount;
+	}
+	public static float GetOjisanCount()
+	{
+		return SelectOjisanCount;
 	}
 }
