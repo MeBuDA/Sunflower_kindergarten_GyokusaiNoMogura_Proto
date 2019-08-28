@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -649,15 +649,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8912167718723962327, guid: d776eed36bbe33a40bc19944ff022000,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.225
-      objectReference: {fileID: 0}
     - target: {fileID: 8921917101955474941, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
       propertyPath: scenemoveNextScene
       value: LevelSelectMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912167718723962327, guid: d776eed36bbe33a40bc19944ff022000,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.225
       objectReference: {fileID: 0}
     - target: {fileID: 361264427760616735, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287848093}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83aa1cf3128553a4aad15adb0838e37c, type: 3}
   m_Name: 
@@ -1295,6 +1295,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8921917101955474941, guid: d776eed36bbe33a40bc19944ff022000,
+        type: 3}
+      propertyPath: scenemoveNextScene
+      value: MainMain
+      objectReference: {fileID: 0}
     - target: {fileID: 8912167718723962327, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
       propertyPath: m_LocalRotation.y
@@ -1319,11 +1324,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.223
-      objectReference: {fileID: 0}
-    - target: {fileID: 8921917101955474941, guid: d776eed36bbe33a40bc19944ff022000,
-        type: 3}
-      propertyPath: scenemoveNextScene
-      value: MainMain
       objectReference: {fileID: 0}
     - target: {fileID: 361264427760616735, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
