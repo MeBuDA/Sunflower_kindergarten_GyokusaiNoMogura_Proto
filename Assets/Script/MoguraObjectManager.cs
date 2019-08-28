@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using MoguraPosition; //Mogura.csの情報を取ってきてる
 using UnityEngine;
 using MoguraAttackAni;
-using UnityEngine.SceneManagement;//シーン移動のため
 
 public class MoguraObjectManager : MonoBehaviour
 {
@@ -13,9 +12,7 @@ public class MoguraObjectManager : MonoBehaviour
 	[SerializeField] int BossMoguraSelect = 5; //ボスモグラが選ばれる確率の分子
 	[SerializeField] int GoldMoguraSelect = 1; //ゴールドモグラが選べれる確率の分子
 	[SerializeField] int OjisanSelect = 4; //おじさんが選ばれる確率の分s
-	[SerializeField] int TimeLimit = 120; //制限時間（秒単位）
 	public GameObject Switch;//すたーとぼたん
-	float startDateTime;
 	public static int SelectMoguraCount;
 	public static int SelectOjisanCount;
 	public Mogura[] moguraPosition; //moguraObjectのアタッチ
@@ -28,22 +25,9 @@ public class MoguraObjectManager : MonoBehaviour
 
 		Transform StartPos = Switch.transform;//StartSwitchの位置を取得
 		Vector3 pos = StartPos.position;
-		if (pos.y > -100)
-		{//スタートボタン押してからの時間をはかるため
-			startDateTime = Time.time;
-		}
-		else if (pos.y < -100)//スイッチの位置によってゲーム開始
+		if (pos.y < -100)//スイッチの位置によってゲーム開始
 		{
-			
-			// 制限時間		
-			var time = Time.time - startDateTime;
-			float seconds = (int)time;
-			if (seconds > TimeLimit)//制限時間が来たら
-			{
-				SceneManager.LoadScene("TotalScore");//結果発表～
-			}
-			Debug.Log(time);
-			//Debug.Log("start");
+		
 			if (randomCount == 1)
 			{
 				int moguraPopPosition = Random.Range(0, moguraPosition.Length);
