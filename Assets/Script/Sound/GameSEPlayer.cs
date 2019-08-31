@@ -13,30 +13,49 @@ namespace SoundSystem{
         //SEリスト
         public List<AudioClip> gameSEList = new List<AudioClip>();
 
+        //リストにAudioClipが一つしか登録されていないときに使う
+        //AudioClipが複数割り当てられている場合、最初の音を再生することも一応できる
+        public void Play3D(float playPitch = 1){
+            if(gameSEList.Count() != 1){
+                Debug.Log("Elements of gameSEList is not one");
+            }
+            
+            if(gameSEList[0] == null){
+                Debug.Log("AudioClip Not Found");
+            }
+            else{
+                gameSE.pitch = playPitch;
+                gameSE.spatialBlend = 1f;
+                gameSE.clip = gameSEList[0];
+
+                gameSE.Play();
+            }
+        }
+
         //リストから指定した名前のAudioClipを呼び出し再生
         public void PlaySEOneShot3D(string clipName, float playPitch = 1f){
-            AudioClip soundEffect = gameSEList.FirstOrDefault(clip => clip.name == clipName);
-
-            if(soundEffect != null){
-                gameSE.pitch = playPitch;
-                gameSE.PlayOneShot(soundEffect);
+            if(gameSEList.FirstOrDefault(clip => clip.name == clipName) == null){
+                Debug.Log(clipName + " Not Found");
             }
 
             else{
-                Debug.Log(clipName + " Not Found");
+                gameSE.pitch = playPitch;
+                gameSE.spatialBlend = 1f;
+
+                gameSE.PlayOneShot(gameSEList.FirstOrDefault(clip => clip.name == clipName));
             }
         }
 
         //リストから指定した番号のAudioClipを呼び出し再生
         public void PlaySEOneShot3D(int clipNum, float playPitch = 1f){
-            AudioClip soundEffect = gameSEList[clipNum];
-
-            if(soundEffect == null){
+            if(gameSEList[clipNum] == null){
                 Debug.Log(clipNum.ToString() + " Not Found");
             }
             else{
                 gameSE.pitch = playPitch;
-                gameSE.PlayOneShot(soundEffect);
+                gameSE.spatialBlend = 1f;
+
+                gameSE.PlayOneShot(gameSEList[clipNum]);
             }
         }
 
@@ -44,7 +63,6 @@ namespace SoundSystem{
         public void Reset(){
             gameSE = GetComponent<AudioSource>();
             gameSE.playOnAwake = false;
-            gameSE.spatialBlend = 1f;
         }
     }
 }
