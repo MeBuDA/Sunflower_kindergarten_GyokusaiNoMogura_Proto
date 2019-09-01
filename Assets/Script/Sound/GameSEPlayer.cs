@@ -15,7 +15,7 @@ namespace SoundSystem{
 
         //リストにAudioClipが一つしか登録されていないときに使う
         //AudioClipが複数割り当てられている場合、最初の音を再生することも一応できる
-        public void Play3D(float playPitch = 1){
+        public void Play3D(float playPitch = 1f){
             if(gameSEList.Count() != 1){
                 Debug.Log("Elements of gameSEList is not one");
             }
@@ -29,6 +29,26 @@ namespace SoundSystem{
                 gameSE.clip = gameSEList[0];
 
                 gameSE.Play();
+            }
+        }
+
+        //Play3Dの先着優先バージョン
+        public void Play3DPrioritizePrevious(float playPitch = 1f){
+            if(gameSEList.Count() != 1){
+                Debug.Log("Elements of gameSEList is not one");
+            }
+            
+            if(gameSEList[0] == null){
+                Debug.Log("AudioClip Not Found");
+            }
+            else{
+                if(!gameSE.isPlaying){
+                    gameSE.pitch = playPitch;
+                    gameSE.spatialBlend = 1f;
+                    gameSE.clip = gameSEList[0];
+
+                    gameSE.Play();
+                }
             }
         }
 

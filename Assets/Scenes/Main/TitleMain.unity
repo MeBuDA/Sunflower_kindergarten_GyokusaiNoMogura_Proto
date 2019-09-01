@@ -789,6 +789,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenueSwitch
       objectReference: {fileID: 0}
+    - target: {fileID: 8262491439384088794, guid: d776eed36bbe33a40bc19944ff022000,
+        type: 3}
+      propertyPath: m_Name
+      value: MenueSwitchSoundPlayer
+      objectReference: {fileID: 0}
     - target: {fileID: 5396938096465992205, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -865,11 +870,6 @@ PrefabInstance:
       value: 'Game
 
         Start'
-      objectReference: {fileID: 0}
-    - target: {fileID: 8262491439384088794, guid: d776eed36bbe33a40bc19944ff022000,
-        type: 3}
-      propertyPath: m_Name
-      value: MenueSwitchSoundPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 483168434463038394, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}

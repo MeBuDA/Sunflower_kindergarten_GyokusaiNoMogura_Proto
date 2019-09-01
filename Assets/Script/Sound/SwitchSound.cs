@@ -6,9 +6,9 @@ using SoundSystem;
 
 public class SwitchSound : MonoBehaviour{
     //フラグ
-    public bool dontDestroyOnLoad;              //このスイッチによってシーンが切り替わる場合はtrueにする
+    public bool dontDestroyOnLoad;                      //このスイッチによってシーンが切り替わる場合はtrueにする
     //public bool consoleLog;
-    private bool sceneFinished;           //元居たシーンが破棄されるとtrue
+    private bool sceneFinished;                         //元居たシーンが破棄されるとtrue
 
     //SoundSystem
     public GameSEPlayer switchSE;
