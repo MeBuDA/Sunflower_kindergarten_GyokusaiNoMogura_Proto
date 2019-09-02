@@ -34,7 +34,7 @@ public class HammerSwingSound : MonoBehaviour{
         if(speed >= speedThreshold){
             //swing.Play();
             //swingCounter++;
-            hamSound.Play3DPrioritizePrevious();
+            hamSound.PlaySE3D_PrioritizePrevious();
         }
 
         recentPos = hammer.transform.position;

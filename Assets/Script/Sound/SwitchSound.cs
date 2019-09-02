@@ -34,7 +34,7 @@ public class SwitchSound : MonoBehaviour{
             Debug.Log("button Not Found");
         }
         else if(button.ExitFlag){
-            switchSE.Play3D();
+            switchSE.PlaySE3D();
             //Debug.Log("Play");
         }
 
