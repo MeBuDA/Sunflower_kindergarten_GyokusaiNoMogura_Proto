@@ -241,11 +241,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1764153877908122934}
   - component: {fileID: 4422772748808581979}
-  - component: {fileID: 8762242942830974572}
   - component: {fileID: 6113273535909531563}
   - component: {fileID: 7368556127699161754}
-  - component: {fileID: 5239630293622916199}
   - component: {fileID: 8691102996226708689}
+  - component: {fileID: 5704395631028884219}
+  - component: {fileID: 2433352821730124507}
+  - component: {fileID: 375682492426714150}
   m_Layer: 0
   m_Name: RocketMogura
   m_TagString: Untagged
@@ -290,7 +291,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!82 &8762242942830974572
+--- !u!136 &6113273535909531563
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764153877907697942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.0634654
+  m_Height: 0.1269308
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.15656339, z: 0}
+--- !u!114 &7368556127699161754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764153877907697942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52adb3b1bcc5f4449fdef37ed825d3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootAnimator: {fileID: 0}
+--- !u!114 &8691102996226708689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764153877907697942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a9fca9c53b3e94eb8f6635db9ce832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObjectScore: 700
+--- !u!82 &5704395631028884219
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,9 +341,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7c5c858f82b050f4a8dbd69fae2389e9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -386,21 +427,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!136 &6113273535909531563
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764153877907697942}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.0634654
-  m_Height: 0.1269308
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.15656339, z: 0}
---- !u!114 &7368556127699161754
+--- !u!114 &2433352821730124507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -409,11 +436,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1764153877907697942}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52adb3b1bcc5f4449fdef37ed825d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b2b06976a02fc640978a69b7c36144a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rootAnimator: {fileID: 0}
---- !u!114 &5239630293622916199
+  gameSE: {fileID: 5704395631028884219}
+  gameSEList:
+  - {fileID: 8300000, guid: 787dcf696fd453f47bc304b9fc05d6fd, type: 3}
+--- !u!114 &375682492426714150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,22 +451,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1764153877907697942}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbc8951474305af4bbe41dc03a1b1960, type: 3}
+  m_Script: {fileID: 11500000, guid: 049bb22890419c147a552b5c9e2f664c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8691102996226708689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764153877907697942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61a9fca9c53b3e94eb8f6635db9ce832, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisObjectScore: 700
+  rocketSE: {fileID: 2433352821730124507}
+  flySEClip: {fileID: 8300000, guid: 32d3bbc12c127414a8923f9e43f03645, type: 3}
+  PDMC: {fileID: 0}
+  rocketAnimator: {fileID: 0}
+  rocketTransform: {fileID: 1764153877908122934}
+  pitchLange: 0.7
+  fadeOutTime: 0.2
 --- !u!1 &1764153877907697944
 GameObject:
   m_ObjectHideFlags: 0
