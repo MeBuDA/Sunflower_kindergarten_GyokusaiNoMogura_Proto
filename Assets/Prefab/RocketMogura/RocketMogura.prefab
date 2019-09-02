@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 8691102996226708689}
   - component: {fileID: 5704395631028884219}
   - component: {fileID: 2433352821730124507}
-  - component: {fileID: 996110995887493008}
+  - component: {fileID: 375682492426714150}
   m_Layer: 0
   m_Name: RocketMogura
   m_TagString: Untagged
@@ -442,7 +442,7 @@ MonoBehaviour:
   gameSE: {fileID: 5704395631028884219}
   gameSEList:
   - {fileID: 8300000, guid: 787dcf696fd453f47bc304b9fc05d6fd, type: 3}
---- !u!114 &996110995887493008
+--- !u!114 &375682492426714150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -454,7 +454,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 049bb22890419c147a552b5c9e2f664c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSE: {fileID: 2433352821730124507}
+  rocketSE: {fileID: 2433352821730124507}
+  flySEClip: {fileID: 8300000, guid: 32d3bbc12c127414a8923f9e43f03645, type: 3}
+  PDMC: {fileID: 0}
+  rocketAnimator: {fileID: 0}
+  rocketTransform: {fileID: 1764153877908122934}
+  pitchLange: 0.7
+  fadeOutTime: 0.2
 --- !u!1 &1764153877907697944
 GameObject:
   m_ObjectHideFlags: 0

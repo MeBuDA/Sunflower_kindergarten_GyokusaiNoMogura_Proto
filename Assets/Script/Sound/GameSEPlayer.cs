@@ -15,7 +15,7 @@ namespace SoundSystem{
 
         //リストにAudioClipが一つしか登録されていないときに使う
         //AudioClipが複数割り当てられている場合、最初の音を再生することも一応できる
-        public void PlaySE3D(float playPitch = 1f){
+        public void PlaySE3D(float playPitch = 1f, bool loop = false){
             if(gameSEList.Count() != 1){
                 Debug.Log("Elements of gameSEList is not one");
             }
@@ -26,6 +26,7 @@ namespace SoundSystem{
             else{
                 gameSE.pitch = playPitch;
                 gameSE.spatialBlend = 1f;
+                gameSE.loop = loop;
                 gameSE.clip = gameSEList[0];
 
                 gameSE.Play();
@@ -33,7 +34,7 @@ namespace SoundSystem{
         }
 
         //Play3DのOneShot版
-        public void PlaySEOneShot3D(float playPitch = 1f){
+        public void PlaySEOneShot3D(float playPitch = 1f, bool loop = false){
             if(gameSEList.Count() != 1){
                 Debug.Log("Elements of gameSEList is not one");
             }
@@ -44,6 +45,7 @@ namespace SoundSystem{
             else{
                 gameSE.pitch = playPitch;
                 gameSE.spatialBlend = 1f;
+                gameSE.loop = loop;
 
                 gameSE.PlayOneShot(gameSEList[0]);
             }
@@ -70,7 +72,7 @@ namespace SoundSystem{
         }
 
         //リストから指定した名前のAudioClipを呼び出し再生
-        public void PlaySEOneShot3D(string clipName, float playPitch = 1f){
+        public void PlaySEOneShot3D(string clipName, float playPitch = 1f, bool loop = false){
             if(gameSEList.FirstOrDefault(clip => clip.name == clipName) == null){
                 Debug.Log(clipName + " Not Found");
             }
@@ -78,22 +80,46 @@ namespace SoundSystem{
             else{
                 gameSE.pitch = playPitch;
                 gameSE.spatialBlend = 1f;
+                gameSE.loop = loop;
 
                 gameSE.PlayOneShot(gameSEList.FirstOrDefault(clip => clip.name == clipName));
             }
         }
 
         //リストから指定した番号のAudioClipを呼び出し再生
-        public void PlaySEOneShot3D(int clipNum, float playPitch = 1f){
+        public void PlaySEOneShot3D(int clipNum, float playPitch = 1f, bool loop = false){
             if(gameSEList[clipNum] == null){
                 Debug.Log(clipNum.ToString() + " Not Found");
             }
             else{
                 gameSE.pitch = playPitch;
                 gameSE.spatialBlend = 1f;
+                gameSE.loop = loop;
 
                 gameSE.PlayOneShot(gameSEList[clipNum]);
             }
+        }
+
+        public void PlaySE3D(int clipNum, float playPitch = 1f, bool loop = false){
+            if(gameSEList[clipNum] == null){
+                Debug.Log(clipNum.ToString() + " Not Found");
+            }
+            else{
+                gameSE.pitch = playPitch;
+                gameSE.spatialBlend = 1f;
+                gameSE.loop = loop;
+                gameSE.clip = gameSEList[clipNum];
+
+                gameSE.Play();
+            }
+        }
+
+        public void SoundStop(){
+            if(!gameSE.isPlaying){
+                Debug.Log("Not playing");
+            }
+            
+            gameSE.Stop();
         }
 
         //適用されたAudioSourceの初期化処理
