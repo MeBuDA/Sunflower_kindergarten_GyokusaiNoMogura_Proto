@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2195816989971770626}
   - component: {fileID: 2450952192363971860}
+  - component: {fileID: 8961917095447477760}
   m_Layer: 0
   m_Name: MoguraAttack
   m_TagString: Untagged
@@ -51,6 +52,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8961917095447477760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80331613146074070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2315c0559e82a3b4d90a80c00b6c928d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSEPlayer: {fileID: 6732126850487992820}
+  attackAnimator: {fileID: 2450952192363971860}
+  playPitch: 1.2
 --- !u!1 &707148908376918872
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +791,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d6eef6ed02c7bfc4ebb69dee41de2900, type: 3}
   - {fileID: 8300000, guid: eb2a66f3feb671241847f4b8d3897828, type: 3}
   - {fileID: 8300000, guid: a2dc190cd6358dc4a8a9c361ffc3cee8, type: 3}
+  - {fileID: 8300000, guid: c818c5fbf7dee1c4595c37b5ca32654a, type: 3}
 --- !u!114 &5910958517799495937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,15 +990,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d565fe61ef0942d40a0386f2f42a2133, type: 3}
---- !u!4 &4873268240125544428 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7596665052230853964, guid: d565fe61ef0942d40a0386f2f42a2133,
-    type: 3}
-  m_PrefabInstance: {fileID: 3084285390525850272}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4873268240126041036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7596665052231350636, guid: d565fe61ef0942d40a0386f2f42a2133,
+    type: 3}
+  m_PrefabInstance: {fileID: 3084285390525850272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4873268240125544428 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7596665052230853964, guid: d565fe61ef0942d40a0386f2f42a2133,
     type: 3}
   m_PrefabInstance: {fileID: 3084285390525850272}
   m_PrefabAsset: {fileID: 0}

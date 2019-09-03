@@ -33,7 +33,7 @@ namespace SoundSystem{
         }
 
         //Play3Dの先着優先バージョン
-        public void Play3DPrioritizePrevious(float playPitch = 1f){
+        public void PlaySE3D_PrioritizePrevious(float playPitch = 1f){
             if(gameSEList.Count() != 1){
                 Debug.Log("Elements of gameSEList is not one");
             }

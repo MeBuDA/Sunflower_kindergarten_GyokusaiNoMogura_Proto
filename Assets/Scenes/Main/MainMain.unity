@@ -136,6 +136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoguraObject (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5762799240742577905, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5762799240742577908, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -366,6 +371,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoguraObject (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762799240742577905, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5762799240742577908, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
@@ -602,6 +612,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoguraObject (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762799240742577905, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5762799240742577908, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
@@ -1158,6 +1173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoguraObject (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762799240742577905, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5762799240742577908, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
