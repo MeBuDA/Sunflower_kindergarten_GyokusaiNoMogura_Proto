@@ -22,7 +22,8 @@ namespace SoundSystem{
             //シングルトン処理
             if(Instance == null){
                 Instance = this;
-                DontDestroyOnLoad(this);
+                //最終的にはDDOLを有効にし、Titleシーン以外のSoundManagerを消去する
+                //DontDestroyOnLoad(this);
             }
             else{
                 Destroy(this);
@@ -33,15 +34,15 @@ namespace SoundSystem{
         }
 
         //指定した名前の音を再生
-        void PlayOneShotSE2D(AudioSource audioSource, List<AudioClip> SEList, string clipName){
-            AudioClip audioClip = SEList.FirstOrDefault(clip => clip.name == clipName);
+        public void PlayOneShot_System(string clipName){
+            AudioClip audioClip = systemSE.FirstOrDefault(clip => clip.name == clipName);
 
             if(audioClip == null){
                 Debug.Log(clipName + " not found");
                 return;
             }
 
-            audioSource.PlayOneShot(audioClip);
+            systemAudioSource.PlayOneShot(audioClip);
         }
 
         //AduioSource生成

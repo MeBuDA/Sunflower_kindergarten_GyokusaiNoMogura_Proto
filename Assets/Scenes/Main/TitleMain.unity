@@ -155,7 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0086780a7fc1cd643bf96e13ed6907d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  systemSE: []
+  systemSE:
+  - {fileID: 8300000, guid: 9e09b7a047dc88440bafba923a22b633, type: 3}
 --- !u!1001 &88653422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -427,21 +428,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerDevMasChange
       objectReference: {fileID: 0}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: mousePlayer
-      value: 
-      objectReference: {fileID: 88653423}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGoplayer
-      value: 
-      objectReference: {fileID: 912262444}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGo
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577470, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -495,6 +481,21 @@ PrefabInstance:
     - target: {fileID: 6695007432702577470, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 88653423}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 912262444}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGo
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
