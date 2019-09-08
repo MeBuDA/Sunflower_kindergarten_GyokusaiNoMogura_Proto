@@ -1,19 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SoundSystem;													//サウンド追加分1
 
 public class ResultScore : MonoBehaviour
 {
 	public TextMesh Result;
 	float HighScore;
 	string Key = "High Score";
-
 	
 	void Start()
     {
 		//PlayerPrefs.DeleteAll();//ハイスコアリセットの時に使う
 		HighScore = PlayerPrefs.GetFloat(Key, 0);
 		
+		//効果音再生
+		SoundManager.Instance.PlayOneShot_System("Result_pri01");	//サウンド追加分2
     }
 
     // Update is called once per frame
