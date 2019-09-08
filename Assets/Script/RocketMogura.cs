@@ -37,12 +37,25 @@ namespace RocketMoguraPosition
 
         public void RocketMoguraFire()
         {
-            if(rocketAnimator.GetCurrentAnimatorStateInfo(0).IsName("RocketMoguraKanState")) //このif文があるとロケットモグラが戻った直後に発射されなくなる
+            if (rocketAnimator.GetCurrentAnimatorStateInfo(0).IsName("RocketMoguraKanState")) //このif文があるとロケットモグラが戻った直後に発射されなくなる
             {
                 if (rocketUpFlag == true)
                 {
                     rocketAnimator.SetTrigger("RocketMoguraFire");
                 }
+            }
+        }
+
+        public void RocketMoguraHuttobi()
+        {
+            rocketAnimator.SetBool("RocketMoguraHitHammer", true);
+        }
+
+        public void Update()
+        {
+            if (rocketAnimator.GetCurrentAnimatorStateInfo(0).IsName("RocketMoguraKanState"))
+            {
+                rocketAnimator.SetBool("RocketMoguraHitHammer", false);
             }
         }
     }
