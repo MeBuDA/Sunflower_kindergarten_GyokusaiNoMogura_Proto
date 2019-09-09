@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main/MainMain.unity
     guid: 6886d6d249c2e5a4eb362318d6053a33
+  - enabled: 1
+    path: Assets/Scenes/Main/TotalScore.unity
+    guid: 29a5d27b75c909e44b625fe91a11110f
   m_configObjects: {}

@@ -1,32 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SoundSystem;
 
 public class HammerSwingSound : MonoBehaviour{
-    private GameObject hammer;
-    private static CriAtomSource swing;
+    //コンポーネント
+    public Transform hammer;
 
-    private Vector3 latestPos;
+    //private GameObject hammer;
+    //private static CriAtomSource swing;
+
+    //SoundSystem
+    public GameSEPlayer hamSound;
+
+    //パラメーター
+    private Vector3 recentPos;
     private Vector3 deltaPosition;
-    public float speed;
-    public float refSpeed = 13.0f;
-    public int swingCounter = 0;
+    private float speed;
+    public float speedThreshold = 13.0f;
+    private float plyaPitch = 0.8f;
+    //public int swingCounter = 0;
 
     void Start(){
-        hammer = GameObject.Find("Head");
-        swing = GetComponent<CriAtomSource>();
+        //hammer = GameObject.Find("Head");
+        //swing = GetComponent<CriAtomSource>();
     }
 
-    // Update is called once per frame
     void Update(){
-        deltaPosition = (hammer.transform.position - latestPos) / Time.deltaTime;
+        //直前のフレームと現在のフレームの位置情報から速度を計算
+        deltaPosition = (hammer.transform.position - recentPos) / Time.deltaTime;
         speed = deltaPosition.magnitude;
 
-        if(speed >= refSpeed){
-            swing.Play();
-            swingCounter++;
+        //速度が閾値異常なら音が鳴る
+        if(speed >= speedThreshold){
+            //swing.Play();
+            //swingCounter++;
+            hamSound.PlaySE3D_PrioritizePrevious(plyaPitch);
         }
 
-        latestPos = hammer.transform.position;
+        recentPos = hammer.transform.position;
     }
 }
