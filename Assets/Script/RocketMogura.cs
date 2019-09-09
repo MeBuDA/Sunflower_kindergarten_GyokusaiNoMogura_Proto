@@ -10,7 +10,7 @@ namespace RocketMoguraPosition
     {
         private Animator rocketAnimator;
 
-        [SerializeField] float rocketUpTime; //モグラロケットが起動するまでの時間(秒)
+        //[SerializeField] float rocketUpTime; //モグラロケットが起動するまでの時間(秒)
         private bool rocketUpFlag;
 
         void Awake()
@@ -21,16 +21,16 @@ namespace RocketMoguraPosition
         void Start()
         {
             rocketUpFlag = false;
-            Invoke("RocketUp", rocketUpTime - 3.0f);
+            //Invoke("RocketUp", rocketUpTime - 3.0f);
         }
 
-        void RocketUp()
+        public void RocketUp()
         {
             rocketAnimator.SetTrigger("RocketMoguraKanUp");
-            Invoke("RocketUpFinish", 3.0f);
+            //Invoke("RocketUpFinish", 3.0f);
         }
 
-        void RocketUpFinish()
+        public void RocketUpFinish()
         {
             rocketUpFlag = true;
         }

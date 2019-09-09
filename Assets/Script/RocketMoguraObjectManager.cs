@@ -51,9 +51,4 @@ public class RocketMoguraObjectManager : MonoBehaviour
 			}
 		}
     }
-
-    void Fire()
-    {
-        rocketMoguraPosition[rocketMoguraPopPosition].RocketMoguraFire();
-    }
 }

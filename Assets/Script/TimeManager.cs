@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;//シーン移動のため
 
+using RocketMoguraPosition;
+
 public class TimeManager : MonoBehaviour
 {
-	[SerializeField] int TimeLimit = 120; //制限時間（秒単位）
-	public GameObject Switch;
+    [SerializeField] int RocketUpTime = 60; //砲台が起動するまでの時間（秒単位）※3秒以上にすること
+    [SerializeField] int TimeLimit = 120; //制限時間（秒単位）
+    public GameObject Switch;
 	float startDateTime;
+
+    public RocketMoguraPosition.RocketMogura[] rocketMoguraPosition;
+    private GameObject rocketMoguraObject;
 
 	// Update is called once per frame
 	void Update()
@@ -24,11 +30,28 @@ public class TimeManager : MonoBehaviour
 			// 制限時間		
 			var time = Time.time - startDateTime;
 			float seconds = (int)time;
-			if (seconds > TimeLimit)//制限時間が来たら
+
+            if (seconds == RocketUpTime - 3.0f)
+            {
+                for (int i = 0; i < rocketMoguraPosition.Length; i++)
+                {
+                    rocketMoguraPosition[i].RocketUp();
+                }
+            }
+
+            if (seconds == RocketUpTime)
+            {
+                for (int i = 0; i < rocketMoguraPosition.Length; i++)
+                {
+                    rocketMoguraPosition[i].RocketUpFinish();
+                }
+            }
+
+            if (seconds > TimeLimit)//制限時間が来たら
 			{
 				SceneManager.LoadScene("TotalScore");//結果発表～
 			}
-			Debug.Log(time);
+			//Debug.Log(time);
 
 		}
 	}
