@@ -196,6 +196,16 @@ PrefabInstance:
 
         Start'
       objectReference: {fileID: 0}
+    - target: {fileID: 483168434463038394, guid: d776eed36bbe33a40bc19944ff022000,
+        type: 3}
+      propertyPath: gameSEList.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c09d029a59b5cf4599d2fcc7ed9f0bc, type: 3}
+    - target: {fileID: 4160636986819404223, guid: d776eed36bbe33a40bc19944ff022000,
+        type: 3}
+      propertyPath: dontDestroyOnLoad
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d776eed36bbe33a40bc19944ff022000, type: 3}
 --- !u!1001 &1204327089
@@ -210,6 +220,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerDevMasChange
       objectReference: {fileID: 0}
+    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 1666382867}
+    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 1820000077}
     - target: {fileID: 6695007432702577470, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -280,16 +300,6 @@ PrefabInstance:
       propertyPath: oculusGo
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: mousePlayer
-      value: 
-      objectReference: {fileID: 1666382867}
-    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGoplayer
-      value: 
-      objectReference: {fileID: 1820000077}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf45fb9f77bc304b851b5b4786a006d, type: 3}
 --- !u!1 &1407933426
