@@ -280,6 +280,16 @@ PrefabInstance:
       propertyPath: oculusGo
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 1666382867}
+    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 1820000077}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf45fb9f77bc304b851b5b4786a006d, type: 3}
 --- !u!1 &1407933426

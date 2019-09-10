@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8746585787888627468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2176685342468732840}
@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireSE: {fileID: 5086281793850805497}
+  rocketUpTime: 60
 --- !u!1001 &5734888552565764264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -198,11 +199,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6898576921546387688}
     m_Modifications:
-    - target: {fileID: 8834669810092434207, guid: e1625d9a085db3647be187613189d570,
-        type: 3}
-      propertyPath: m_Name
-      value: Rocket
-      objectReference: {fileID: 0}
     - target: {fileID: 5882625844157286144, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -257,6 +253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834669810092434207, guid: e1625d9a085db3647be187613189d570,
+        type: 3}
+      propertyPath: m_Name
+      value: Rocket
       objectReference: {fileID: 0}
     - target: {fileID: 4814741784785043365, guid: e1625d9a085db3647be187613189d570,
         type: 3}

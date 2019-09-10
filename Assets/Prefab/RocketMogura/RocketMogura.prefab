@@ -247,6 +247,7 @@ GameObject:
   - component: {fileID: 5704395631028884219}
   - component: {fileID: 2433352821730124507}
   - component: {fileID: 375682492426714150}
+  - component: {fileID: 6917819353372495060}
   m_Layer: 0
   m_Name: RocketMogura
   m_TagString: Untagged
@@ -456,11 +457,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rocketSE: {fileID: 2433352821730124507}
   flySEClip: {fileID: 8300000, guid: 32d3bbc12c127414a8923f9e43f03645, type: 3}
-  PDMC: {fileID: 0}
-  rocketAnimator: {fileID: 0}
+  PDMC: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d, type: 3}
+  rocketAnimator: {fileID: 6723748588399993173, guid: ecc593370b6e09b47bbe146858e5a53f,
+    type: 3}
   rocketTransform: {fileID: 1764153877908122934}
   pitchLange: 0.7
   fadeOutTime: 0.2
+--- !u!114 &6917819353372495060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764153877907697942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904ce20f8ee024a46a309f5e86f62b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1764153877907697944
 GameObject:
   m_ObjectHideFlags: 0

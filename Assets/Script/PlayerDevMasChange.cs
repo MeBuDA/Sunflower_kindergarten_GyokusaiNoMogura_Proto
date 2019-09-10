@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerDevMasChange : MonoBehaviour
 {
-    public bool oculusGo ;
+    public bool oculusGo;
     public GameObject oculusGoplayer;
     public GameObject mousePlayer;
     void Awake()
