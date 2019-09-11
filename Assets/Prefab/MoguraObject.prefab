@@ -66,7 +66,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSEPlayer: {fileID: 6732126850487992820}
   attackAnimator: {fileID: 2450952192363971860}
-  playPitch: 1.2
 --- !u!1 &707148908376918872
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +296,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisObjectScore: -400
+  hitHammerEffects:
+  - {fileID: 9026885398177373427, guid: 9921b44cb19ce4641bcb0c9a7eb66028, type: 3}
+  - {fileID: 752676901903894161, guid: e696436a1f7d49444bf3e332d159cbd6, type: 3}
+  - {fileID: 5175932759498676923, guid: 1bcc975fbe14e8b4c956b6027301505d, type: 3}
 --- !u!114 &861293107616857834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,6 +380,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisObjectScore: 1000
+  hitHammerEffects:
+  - {fileID: 9026885398177373427, guid: 9921b44cb19ce4641bcb0c9a7eb66028, type: 3}
+  - {fileID: 752676901903894161, guid: e696436a1f7d49444bf3e332d159cbd6, type: 3}
+  - {fileID: 5175932759498676923, guid: 1bcc975fbe14e8b4c956b6027301505d, type: 3}
 --- !u!54 &3518635816657126627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -433,6 +440,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisObjectScore: 500
+  hitHammerEffects:
+  - {fileID: 9026885398177373427, guid: 9921b44cb19ce4641bcb0c9a7eb66028, type: 3}
+  - {fileID: 752676901903894161, guid: e696436a1f7d49444bf3e332d159cbd6, type: 3}
+  - {fileID: 5175932759498676923, guid: 1bcc975fbe14e8b4c956b6027301505d, type: 3}
 --- !u!114 &6876089894983932327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,6 +499,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisObjectScore: 100
+  hitHammerEffects:
+  - {fileID: 9026885398177373427, guid: 9921b44cb19ce4641bcb0c9a7eb66028, type: 3}
+  - {fileID: 752676901903894161, guid: e696436a1f7d49444bf3e332d159cbd6, type: 3}
+  - {fileID: 5175932759498676923, guid: 1bcc975fbe14e8b4c956b6027301505d, type: 3}
 --- !u!114 &4438444758427138112
 MonoBehaviour:
   m_ObjectHideFlags: 0
