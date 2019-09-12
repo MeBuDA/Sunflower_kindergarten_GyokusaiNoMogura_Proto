@@ -49,7 +49,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: da6b5d8af827be444832f569717b0795, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -200,11 +200,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6898576921546387688}
     m_Modifications:
-    - target: {fileID: 8834669810092434207, guid: e1625d9a085db3647be187613189d570,
-        type: 3}
-      propertyPath: m_Name
-      value: Rocket
-      objectReference: {fileID: 0}
     - target: {fileID: 5882625844157286144, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -218,7 +213,7 @@ PrefabInstance:
     - target: {fileID: 5882625844157286144, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5882625844157286144, guid: e1625d9a085db3647be187613189d570,
         type: 3}
@@ -259,6 +254,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834669810092434207, guid: e1625d9a085db3647be187613189d570,
+        type: 3}
+      propertyPath: m_Name
+      value: Rocket
       objectReference: {fileID: 0}
     - target: {fileID: 4814741784785043365, guid: e1625d9a085db3647be187613189d570,
         type: 3}

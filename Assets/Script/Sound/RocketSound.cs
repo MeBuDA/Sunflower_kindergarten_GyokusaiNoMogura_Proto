@@ -14,9 +14,9 @@ public class RocketSound : MonoBehaviour{
 
     //RocketMoguraKanUp(Animation)のEventから呼び出す
     void RiftCannonSound(){
-        rocketSE.PlaySEOneShot3D("RiftCannon_pri01", 1f, 0.1f);
+        rocketSE.PlaySEOneShot3D("RiftCannon_pri01", 0.5f);
     }
     void SetCannonSound(){
-        rocketSE.PlaySEOneShot3D("SetCannon_pri01", 1f, 0.1f);
+        rocketSE.PlaySEOneShot3D("SetCannon_pri01");
     }
 }
