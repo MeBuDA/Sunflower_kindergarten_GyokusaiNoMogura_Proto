@@ -81,6 +81,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameSE: {fileID: 8847158644324618385}
   gameSEList:
+  - {fileID: 8300000, guid: b2c3b53f34dc0584abdf07d2560d109b, type: 3}
+  - {fileID: 8300000, guid: 8b556615c1ff1974aac8781aa18f2c0d, type: 3}
   - {fileID: 8300000, guid: c2d185b2d4b27494bb14ca2038be6758, type: 3}
 --- !u!82 &8847158644324618385
 AudioSource:
@@ -190,8 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52096a4b47be564e80b1f602080b3cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireSE: {fileID: 5086281793850805497}
-  rocketUpTime: 60
+  rocketSE: {fileID: 5086281793850805497}
 --- !u!1001 &5734888552565764264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,6 +200,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6898576921546387688}
     m_Modifications:
+    - target: {fileID: 8834669810092434207, guid: e1625d9a085db3647be187613189d570,
+        type: 3}
+      propertyPath: m_Name
+      value: Rocket
+      objectReference: {fileID: 0}
     - target: {fileID: 5882625844157286144, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -254,22 +260,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8834669810092434207, guid: e1625d9a085db3647be187613189d570,
-        type: 3}
-      propertyPath: m_Name
-      value: Rocket
-      objectReference: {fileID: 0}
     - target: {fileID: 4814741784785043365, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: rootAnimator
       value: 
       objectReference: {fileID: 6723748588399993173}
-    - target: {fileID: 2972900541470007983, guid: e1625d9a085db3647be187613189d570,
+    - target: {fileID: 2424495544898654489, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: rocketAnimator
       value: 
       objectReference: {fileID: 6723748588399993173}
-    - target: {fileID: 2424495544898654489, guid: e1625d9a085db3647be187613189d570,
+    - target: {fileID: 2972900541470007983, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: rocketAnimator
       value: 
