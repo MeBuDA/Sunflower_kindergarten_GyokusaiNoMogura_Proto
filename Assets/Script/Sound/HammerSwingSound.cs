@@ -18,7 +18,7 @@ public class HammerSwingSound : MonoBehaviour{
     private Vector3 deltaPosition;
     private float speed;
     public float speedThreshold = 13.0f;
-    private float plyaPitch = 0.8f;
+    private float playPitch = 0.8f;
     //public int swingCounter = 0;
 
     void Start(){
@@ -35,7 +35,7 @@ public class HammerSwingSound : MonoBehaviour{
         if(speed >= speedThreshold){
             //swing.Play();
             //swingCounter++;
-            hamSound.PlaySE3D_PrioritizePrevious(plyaPitch);
+            hamSound.PlaySE3D_PrioritizePrevious(1f, playPitch);
         }
 
         recentPos = hammer.transform.position;
