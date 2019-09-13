@@ -124,6 +124,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenemoveNextScene: 
+  hitHammerEffects:
+  - {fileID: 9026885398177373427, guid: 9921b44cb19ce4641bcb0c9a7eb66028, type: 3}
+  - {fileID: 752676901903894161, guid: e696436a1f7d49444bf3e332d159cbd6, type: 3}
+  - {fileID: 5175932759498676923, guid: 1bcc975fbe14e8b4c956b6027301505d, type: 3}
 --- !u!114 &3231513989347766251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,7 +424,6 @@ MonoBehaviour:
   dontDestroyOnLoad: 0
   switchSE: {fileID: 483168434463038394}
   button: {fileID: 3231513989347766251}
-  destroyObject: {fileID: 8262491439384088794}
 --- !u!1 &9130858908344163817
 GameObject:
   m_ObjectHideFlags: 0

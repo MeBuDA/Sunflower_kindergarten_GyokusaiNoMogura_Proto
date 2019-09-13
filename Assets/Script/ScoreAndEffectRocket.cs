@@ -4,15 +4,17 @@ using UnityEngine;
 
 using SceroManager;
 
-public class ScoreRocket : MonoBehaviour
+public class ScoreAndEffectRocket : MonoBehaviour
 {
     public int thisObjectScore; //モグラごとのスコアを打ち込む
 
-    private GameObject rocketMoguraObject;
+    private GameObject rocketMoguraObject; //RocketMoguraObjectを取得
 
-    private Animator animator;
+    private Animator animator; //アニメーターを取得
 
-    private bool attackRocketFlag;
+    private bool attackRocketFlag; //スコアが一回だけ加算される用のフラグ
+
+    [SerializeField] GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
 
     void Start()
     {
@@ -40,6 +42,10 @@ public class ScoreRocket : MonoBehaviour
                 if (attackRocketFlag == true) //攻撃可能状態の場合
                 {
                     //FindObjectOfType<ScoreManager>().
+                    for (int i = 0; i < hitHammerEffects.Length; i++)
+                    {
+                        Instantiate(hitHammerEffects[i], this.transform.position, this.transform.rotation); //このオブジェクトと同じ場所にエフェクトを生成
+                    }
                     ScoreManager.AddScore(thisObjectScore); //ScoreManagerスクリプトのthisObjectScoreメソッド起動
                     attackRocketFlag = false; //攻撃不可状態
                 }

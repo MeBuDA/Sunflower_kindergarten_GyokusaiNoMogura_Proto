@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1836,6 +1836,29 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u30B9\u30BF\u30FC\u30C8"
       objectReference: {fileID: 0}
+    - target: {fileID: 5523953614164963497, guid: 9b7bb451344c126489d9bb1596a9dc56,
+        type: 3}
+      propertyPath: hitHammerEffects.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523953614164963497, guid: 9b7bb451344c126489d9bb1596a9dc56,
+        type: 3}
+      propertyPath: hitHammerEffects.Array.data[0]
+      value: 
+      objectReference: {fileID: 9026885398177373427, guid: 9921b44cb19ce4641bcb0c9a7eb66028,
+        type: 3}
+    - target: {fileID: 5523953614164963497, guid: 9b7bb451344c126489d9bb1596a9dc56,
+        type: 3}
+      propertyPath: hitHammerEffects.Array.data[1]
+      value: 
+      objectReference: {fileID: 752676901903894161, guid: e696436a1f7d49444bf3e332d159cbd6,
+        type: 3}
+    - target: {fileID: 5523953614164963497, guid: 9b7bb451344c126489d9bb1596a9dc56,
+        type: 3}
+      propertyPath: hitHammerEffects.Array.data[2]
+      value: 
+      objectReference: {fileID: 5175932759498676923, guid: 1bcc975fbe14e8b4c956b6027301505d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7bb451344c126489d9bb1596a9dc56, type: 3}
 --- !u!1001 &2133592437
@@ -2009,5 +2032,15 @@ PrefabInstance:
       propertyPath: rocketMoguraPosition.Array.data[2]
       value: 
       objectReference: {fileID: 880028885}
+    - target: {fileID: 1006704116219056456, guid: b5bc03fb08b95db43adbe1ece4efe3cd,
+        type: 3}
+      propertyPath: RocketUpTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006704116219056456, guid: b5bc03fb08b95db43adbe1ece4efe3cd,
+        type: 3}
+      propertyPath: TimeLimit
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5bc03fb08b95db43adbe1ece4efe3cd, type: 3}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 using SceroManager;
 
-public class Score : MonoBehaviour
+public class ScoreAndEffect : MonoBehaviour
 {
     public int thisObjectScore; //モグラごとのスコアを打ち込む
 
@@ -13,6 +13,8 @@ public class Score : MonoBehaviour
     private Animator animator;
 
     private bool attackFlag;
+
+    [SerializeField] GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
 
     void Start()
     {
@@ -39,6 +41,10 @@ public class Score : MonoBehaviour
                 if (attackFlag == true) //攻撃可能状態の場合
                 {
                     //FindObjectOfType<ScoreManager>().
+                    for (int i = 0; i < hitHammerEffects.Length; i++)
+                    {
+                        Instantiate(hitHammerEffects[i], this.transform.position, this.transform.rotation); //このオブジェクトと同じ場所にエフェクトを生成
+                    }
                     ScoreManager.AddScore(thisObjectScore); //ScoreManagerスクリプトのthisObjectScoreメソッド起動
                     attackFlag = false; //攻撃不可状態
                 }
