@@ -10,12 +10,6 @@ public class MoguraHitSound : MonoBehaviour{
     //SoundSystem
     public GameSEPlayer mogHitSE;
 
-    void Start(){
-        for(int i = 0; i < mogura.Length; i++){
-            mogura[i] = mogura[i].GetComponent<HammerHitJudge>();
-        }
-    }
-
     void Update(){
         //HammerHitJudgeからもぐらにハンマーが当たったサインを受け取る
         for(int i = 0; i < mogura.Length; i++){
