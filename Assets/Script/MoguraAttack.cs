@@ -6,7 +6,8 @@ namespace MoguraAttackAni
 {
     public class MoguraAttack : MonoBehaviour
     {   
-         public Animator MoguraAttackAni;
+        public Animator MoguraAttackAni;
+        
         public void MguAttack(string name)
         {
             int count = Random.Range(0,9);
