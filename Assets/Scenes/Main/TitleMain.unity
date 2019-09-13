@@ -423,11 +423,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 88653423}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 912262444}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577464, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_Name
       value: PlayerDevMasChange
       objectReference: {fileID: 0}
+    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 88653423}
+    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 912262444}
     - target: {fileID: 6695007432702577470, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -483,31 +508,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: mousePlayer
-      value: 
-      objectReference: {fileID: 88653423}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGoplayer
-      value: 
-      objectReference: {fileID: 912262444}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGo
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: mousePlayer
-      value: 
-      objectReference: {fileID: 88653423}
-    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGoplayer
-      value: 
-      objectReference: {fileID: 912262444}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf45fb9f77bc304b851b5b4786a006d, type: 3}
 --- !u!1001 &912262442
@@ -654,6 +654,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenueSwitch
       objectReference: {fileID: 0}
+    - target: {fileID: 8262491439384088794, guid: d776eed36bbe33a40bc19944ff022000,
+        type: 3}
+      propertyPath: m_Name
+      value: MenueSwitchSoundPlayer
+      objectReference: {fileID: 0}
     - target: {fileID: 5396938096465992205, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -731,16 +736,11 @@ PrefabInstance:
 
         Start'
       objectReference: {fileID: 0}
-    - target: {fileID: 8262491439384088794, guid: d776eed36bbe33a40bc19944ff022000,
-        type: 3}
-      propertyPath: m_Name
-      value: MenueSwitchSoundPlayer
-      objectReference: {fileID: 0}
     - target: {fileID: 483168434463038394, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
       propertyPath: gameSEList.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: fba9d30d06cde86489ba598e332ce41a, type: 3}
+      objectReference: {fileID: 8300000, guid: 7c5c858f82b050f4a8dbd69fae2389e9, type: 3}
     - target: {fileID: 4160636986819404223, guid: d776eed36bbe33a40bc19944ff022000,
         type: 3}
       propertyPath: dontDestroyOnLoad
