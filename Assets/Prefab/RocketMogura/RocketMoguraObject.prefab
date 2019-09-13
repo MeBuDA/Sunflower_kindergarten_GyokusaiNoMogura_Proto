@@ -49,7 +49,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: da6b5d8af827be444832f569717b0795, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -191,7 +191,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireSE: {fileID: 5086281793850805497}
-  rocketUpTime: 60
 --- !u!1001 &5734888552565764264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212,7 +211,7 @@ PrefabInstance:
     - target: {fileID: 5882625844157286144, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5882625844157286144, guid: e1625d9a085db3647be187613189d570,
         type: 3}
@@ -264,12 +263,12 @@ PrefabInstance:
       propertyPath: rootAnimator
       value: 
       objectReference: {fileID: 6723748588399993173}
-    - target: {fileID: 2972900541470007983, guid: e1625d9a085db3647be187613189d570,
+    - target: {fileID: 2424495544898654489, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: rocketAnimator
       value: 
       objectReference: {fileID: 6723748588399993173}
-    - target: {fileID: 2424495544898654489, guid: e1625d9a085db3647be187613189d570,
+    - target: {fileID: 2972900541470007983, guid: e1625d9a085db3647be187613189d570,
         type: 3}
       propertyPath: rocketAnimator
       value: 

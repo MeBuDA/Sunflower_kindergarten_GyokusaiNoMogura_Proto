@@ -860,7 +860,7 @@ PrefabInstance:
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
@@ -870,7 +870,7 @@ PrefabInstance:
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.66
       objectReference: {fileID: 0}
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
@@ -1266,7 +1266,7 @@ PrefabInstance:
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
@@ -1276,7 +1276,7 @@ PrefabInstance:
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.66
       objectReference: {fileID: 0}
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
@@ -1380,6 +1380,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 719982507}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 551970414}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577464, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_Name
@@ -1396,21 +1411,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 551970414}
     - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGo
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: mousePlayer
-      value: 
-      objectReference: {fileID: 719982507}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGoplayer
-      value: 
-      objectReference: {fileID: 551970414}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: oculusGo
       value: 0
@@ -1597,7 +1597,7 @@ PrefabInstance:
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6898576921546387688, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
@@ -2035,7 +2035,7 @@ PrefabInstance:
     - target: {fileID: 1006704116219056456, guid: b5bc03fb08b95db43adbe1ece4efe3cd,
         type: 3}
       propertyPath: RocketUpTime
-      value: 10
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5bc03fb08b95db43adbe1ece4efe3cd, type: 3}
