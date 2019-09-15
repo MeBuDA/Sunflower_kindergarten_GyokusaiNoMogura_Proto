@@ -43,15 +43,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83789d81436d149229b3702f4a0c5c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomCountMax: 100
-  SelectMogura: 25
-  NomalMoguraSelect: 15
-  BossMoguraSelect: 5
-  GoldMoguraSelect: 1
-  OjisanSelect: 4
+  randomCountMax: 300
+  SelectMogura: 100
+  NomalMoguraSelect: 60
+  BossMoguraSelect: 20
+  GoldMoguraSelect: 10
+  OjisanSelect: 10
+  Switch: {fileID: 0}
   moguraPosition:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  moguraAttackAni: []
