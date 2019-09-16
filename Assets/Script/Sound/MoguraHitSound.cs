@@ -17,7 +17,7 @@ public class MoguraHitSound : MonoBehaviour{
     private bool attackFlag;
 
     void Update(){
-        if (mogAnimator.GetCurrentAnimatorStateInfo(0).IsName("MoguraKanState")){
+        if (mogAnimator.GetCurrentAnimatorStateInfo(0).IsName("New State")){
             attackFlag = true;                                                      //攻撃可能状態
         }
 
@@ -26,7 +26,7 @@ public class MoguraHitSound : MonoBehaviour{
             if(mogura[i] == null){
                 Debug.Log("mogura No." + i.ToString() + " Not Found");
             }
-            else if(mogura[i].EnterFlag && attackFlag && !(mogAnimator.GetCurrentAnimatorStateInfo(0).IsName("MoguraKanState"))){
+            else if(mogura[i].EnterFlag && attackFlag && !(mogAnimator.GetCurrentAnimatorStateInfo(0).IsName("New State"))){
                 //Debug.Log(i.ToString());
                 mogHitSE.PlaySEOneShot3D(i);
                 attackFlag = false;
