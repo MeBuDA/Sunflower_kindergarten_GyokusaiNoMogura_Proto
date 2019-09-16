@@ -27,7 +27,7 @@ public class ScoreAndEffect : MonoBehaviour
 
     void Update()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("MoguraKanState")) //モグラ(全種)が待機状態のAnimationの場合
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("New State")) //モグラ(全種)が待機状態のAnimationの場合
         {
             attackFlag = true; //攻撃可能状態
         }
@@ -36,7 +36,7 @@ public class ScoreAndEffect : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Hammer")) //特定のTagの場合
         {
-            if (!(animator.GetCurrentAnimatorStateInfo(0).IsName("MoguraKanState"))) //モグラ(全種)が待機状態でないAnimetionの場合
+            if (!(animator.GetCurrentAnimatorStateInfo(0).IsName("New State"))) //モグラ(全種)が待機状態でないAnimetionの場合
             {
                 if (attackFlag == true) //攻撃可能状態の場合
                 {
