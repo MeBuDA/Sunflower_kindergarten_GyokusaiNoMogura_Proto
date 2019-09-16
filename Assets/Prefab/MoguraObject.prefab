@@ -656,6 +656,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d6bc1b0c36dd94f837270e10c7aa9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moguraAttackKakuritu: 50
+  bossAttackKakuritu: 30
   MoguraAttackAni: {fileID: 5762799240742577911}
 --- !u!82 &8307025867347613419
 AudioSource:

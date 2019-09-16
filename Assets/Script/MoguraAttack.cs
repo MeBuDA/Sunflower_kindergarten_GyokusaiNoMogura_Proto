@@ -5,15 +5,17 @@ using UnityEngine;
 namespace MoguraAttackAni
 {
     public class MoguraAttack : MonoBehaviour
-    {   
+    {
+        [SerializeField] int moguraAttackKakuritu;
+        [SerializeField] int bossAttackKakuritu;
         public Animator MoguraAttackAni;
         
         public void MguAttack(string name)
         {
-            int count = Random.Range(0,9);
+            int count = Random.Range(0,100);
             if (name == "Mogura")
             {
-                if (count > 4 )
+                if (count < moguraAttackKakuritu)
                 {
                     MoguraAttackAni.SetTrigger("MoguraAttack");
                     Debug.Log("MoguraAttack");
@@ -21,7 +23,8 @@ namespace MoguraAttackAni
             }
             else if(name == "BOSS" )
             {
-                if (count >2) {
+                if (count > bossAttackKakuritu)
+                {
                     MoguraAttackAni.SetTrigger("MoguraAttack");
                     Debug.Log("BOSSAttack");
                 }
