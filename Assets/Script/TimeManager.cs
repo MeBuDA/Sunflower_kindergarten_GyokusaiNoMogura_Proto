@@ -8,7 +8,7 @@ using SoundSystem;								//サウンド追加分 1/3
 
 public class TimeManager : MonoBehaviour
 {
-    [SerializeField] int RocketUpTime = 60; //砲台が起動するまでの時間（秒単位）※3秒以上にすること
+    [SerializeField] int RocketUpTime = 60; //砲台が起動するまでの時間（秒単位）※6秒以上にすること
     [SerializeField] int TimeLimit = 120; //制限時間（秒単位）
     public GameObject Switch;
 	private float startDateTime;
@@ -18,6 +18,14 @@ public class TimeManager : MonoBehaviour
 
 	//flag
 	private bool played = false;				//サウンド追加分2/3
+
+	//RocketUpTimeが6秒未満だったら修正する
+	void Start(){
+		if(RocketUpTime < 6){
+			Debug.Log("\"RocketUpTime\" must be over 6.");
+			RocketUpTime = 6;
+		}
+	}
 
 	// Update is called once per frame
 	void Update()
