@@ -26,6 +26,8 @@ public class MoguraHitSound : MonoBehaviour{
             if(mogura[i] == null){
                 Debug.Log("mogura No." + i.ToString() + " Not Found");
             }
+
+            //ハンマーが当たった、かつアニメーション1セット内で初めて叩かれている、かつアニメーションがNew Stateでない
             else if(mogura[i].EnterFlag && attackFlag && !(mogAnimator.GetCurrentAnimatorStateInfo(0).IsName("New State"))){
                 //Debug.Log(i.ToString());
                 mogHitSE.PlaySEOneShot3D(i);
