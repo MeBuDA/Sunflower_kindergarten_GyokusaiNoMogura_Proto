@@ -17,6 +17,7 @@ public class MoguraObjectManager : MonoBehaviour
 	public static int SelectOjisanCount;
 	public Mogura[] moguraPosition; //moguraObjectのアタッチ
     public MoguraAttack[] moguraAttackAni;
+	public Animator[] MainAni;
 
 
 	void Update ()
@@ -92,25 +93,37 @@ public class MoguraObjectManager : MonoBehaviour
 
 					if (RandomSelect < NomalMoguraSelect)
 					{
-						moguraPosition[moguraPopPosition].MoguraOut();
-						moguraAttackAni[moguraPopPosition].MguAttack("Mogura");
-						SelectMoguraCount++;
+						if (MainAni[moguraPopPosition].GetCurrentAnimatorStateInfo(0).IsName("New State"))
+						{
+							moguraPosition[moguraPopPosition].MoguraOut();
+							moguraAttackAni[moguraPopPosition].MguAttack("Mogura");
+							SelectMoguraCount++;
+						}
 					}
 					else if (NomalMoguraSelect <= RandomSelect && RandomSelect < x1)
 					{
-						moguraPosition[moguraPopPosition].BossMoguraOut();
-						moguraAttackAni[moguraPopPosition].MguAttack("BOSS");
-						SelectMoguraCount++;
+						if (MainAni[moguraPopPosition].GetCurrentAnimatorStateInfo(0).IsName("New State"))
+						{
+							moguraPosition[moguraPopPosition].BossMoguraOut();
+							moguraAttackAni[moguraPopPosition].MguAttack("BOSS");
+							SelectMoguraCount++;
+						}
 					}
 					else if (x1 <= RandomSelect && RandomSelect < x2)
 					{
-						moguraPosition[moguraPopPosition].GoldMoguraOut();
-						SelectMoguraCount++;
+						if (MainAni[moguraPopPosition].GetCurrentAnimatorStateInfo(0).IsName("New State"))
+						{
+							moguraPosition[moguraPopPosition].GoldMoguraOut();
+							SelectMoguraCount++;
+						}
 					}
 					else if (x2 <= RandomSelect && RandomSelect < x3)
 					{
-						moguraPosition[moguraPopPosition].OjisanOut();
-						SelectOjisanCount++;
+						if (MainAni[moguraPopPosition].GetCurrentAnimatorStateInfo(0).IsName("New State"))
+						{
+							moguraPosition[moguraPopPosition].OjisanOut();
+							SelectOjisanCount++;
+						}
 					}
 
 				}

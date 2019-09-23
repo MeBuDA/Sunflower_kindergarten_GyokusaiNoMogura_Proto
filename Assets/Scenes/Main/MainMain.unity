@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -279,6 +279,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!95 &305641522 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
+    type: 3}
+  m_PrefabInstance: {fileID: 559842036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &399712669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -377,6 +383,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d6bc1b0c36dd94f837270e10c7aa9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &514507070 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
+    type: 3}
+  m_PrefabInstance: {fileID: 136439634}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &551970412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -765,6 +777,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
         type: 3}
+      propertyPath: MainAni.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
+        type: 3}
       propertyPath: moguraPosition.Array.data[0]
       value: 
       objectReference: {fileID: 559842037}
@@ -848,6 +865,31 @@ PrefabInstance:
       propertyPath: TimeLimit
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
+        type: 3}
+      propertyPath: MainAni.Array.data[0]
+      value: 
+      objectReference: {fileID: 305641522}
+    - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
+        type: 3}
+      propertyPath: MainAni.Array.data[1]
+      value: 
+      objectReference: {fileID: 803282413}
+    - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
+        type: 3}
+      propertyPath: MainAni.Array.data[2]
+      value: 
+      objectReference: {fileID: 1561119705}
+    - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
+        type: 3}
+      propertyPath: MainAni.Array.data[3]
+      value: 
+      objectReference: {fileID: 1675819419}
+    - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
+        type: 3}
+      propertyPath: MainAni.Array.data[4]
+      value: 
+      objectReference: {fileID: 514507070}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fdd50c9adee04ff7abcb5fe4700d723, type: 3}
 --- !u!1001 &803097700
@@ -924,6 +966,12 @@ PrefabInstance:
       objectReference: {fileID: 1212137489}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecc593370b6e09b47bbe146858e5a53f, type: 3}
+--- !u!95 &803282413 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
+    type: 3}
+  m_PrefabInstance: {fileID: 1123034936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &851464318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1612,6 +1660,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 719982507}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 551970414}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577464, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_Name
@@ -1628,21 +1691,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 551970414}
     - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGo
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: mousePlayer
-      value: 
-      objectReference: {fileID: 719982507}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGoplayer
-      value: 
-      objectReference: {fileID: 551970414}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: oculusGo
       value: 0
@@ -1896,6 +1944,18 @@ PrefabInstance:
       objectReference: {fileID: 1212137489}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecc593370b6e09b47bbe146858e5a53f, type: 3}
+--- !u!95 &1561119705 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
+    type: 3}
+  m_PrefabInstance: {fileID: 570048674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1675819419 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
+    type: 3}
+  m_PrefabInstance: {fileID: 399712669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1709521422
 GameObject:
   m_ObjectHideFlags: 0
