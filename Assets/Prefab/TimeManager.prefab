@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8510758888690326055}
   - component: {fileID: 1006704116219056456}
+  - component: {fileID: 1680068001066934109}
   m_Layer: 0
   m_Name: TimeManager
   m_TagString: Untagged
@@ -43,5 +44,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b12a4cd5a339a41a15c9eb1df3fd33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RocketUpTime: 60
   TimeLimit: 120
   Switch: {fileID: 0}
+  startDateTime: 0
+  rocketMoguraPosition: []
+--- !u!114 &1680068001066934109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3906385634518771061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1047301a945fd64c92ca70d69c074f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nowTime: {fileID: 1006704116219056456}

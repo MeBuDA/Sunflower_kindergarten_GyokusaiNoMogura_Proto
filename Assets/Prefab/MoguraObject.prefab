@@ -617,6 +617,7 @@ GameObject:
   - component: {fileID: 6732126850487992820}
   - component: {fileID: 5910958517799495937}
   - component: {fileID: 2749837889578011548}
+  - component: {fileID: 8970918749833766390}
   m_Layer: 0
   m_Name: MoguraObject
   m_TagString: Untagged
@@ -805,6 +806,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eb2a66f3feb671241847f4b8d3897828, type: 3}
   - {fileID: 8300000, guid: a2dc190cd6358dc4a8a9c361ffc3cee8, type: 3}
   - {fileID: 8300000, guid: c818c5fbf7dee1c4595c37b5ca32654a, type: 3}
+  - {fileID: 8300000, guid: 1e65c571d4703664aa7539fe0d2a8c88, type: 3}
 --- !u!114 &5910958517799495937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,6 +840,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSEPlayer: {fileID: 6732126850487992820}
   attackAnimator: {fileID: 5762799240742577911}
+--- !u!114 &8970918749833766390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762799240742577905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb5c6b9ccf2b2e499cf2f1fcf2ce940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moguraObject: {fileID: 6732126850487992820}
 --- !u!1001 &1724466543432571447
 PrefabInstance:
   m_ObjectHideFlags: 0
