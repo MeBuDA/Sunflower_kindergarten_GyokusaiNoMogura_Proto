@@ -13,7 +13,7 @@ public class ParryTrigger : MonoBehaviour
 		if (other.gameObject.CompareTag("Hammer"))
 		{
 			MoguraAttackAni.SetTrigger("Parry");
-			Debug.Log("Parry");
+			//Debug.Log("Parry");
 		}
 	}
 }

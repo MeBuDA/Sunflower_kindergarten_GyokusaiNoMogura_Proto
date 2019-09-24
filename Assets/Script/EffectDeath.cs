@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EffectDeath : MonoBehaviour
 {
-    [SerializeField] float effectDeathTime;
+    public float effectDeathTime;
     void Start()
     {
         Invoke("EffectFinish", effectDeathTime);

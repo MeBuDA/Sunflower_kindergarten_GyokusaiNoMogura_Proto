@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using SoundSystem;													//サウンド追加分1
+using SoundSystem;	
+using UnityEngine.UI;												//サウンド追加分1
 
 public class ResultScore : MonoBehaviour
 {
-	public TextMesh Result;
+	private Text Result;
 	float HighScore;
 	string Key = "High Score";
 	
@@ -16,6 +17,7 @@ public class ResultScore : MonoBehaviour
 		
 		//効果音再生
 		SoundManager.Instance.PlayOneShot_System("Result_pri01");	//サウンド追加分2
+		Result = GetComponent<Text>();
     }
 
     // Update is called once per frame

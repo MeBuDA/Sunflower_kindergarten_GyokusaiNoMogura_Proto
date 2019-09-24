@@ -14,7 +14,7 @@ using Stun;
         private bool attackFlag;
         
         public MoguraAttackStun stunFlag;
-        [SerializeField] GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
+        public GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
 
         void Start ()
         {

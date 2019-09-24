@@ -20,7 +20,7 @@ public class PlayerDamege : MonoBehaviour
     {
         if (att.gameObject.CompareTag("MoguraWeapon"))
         {
-            Debug.Log("MoguraWeapon");
+            //Debug.Log("MoguraWeapon");
         }
     }
 }

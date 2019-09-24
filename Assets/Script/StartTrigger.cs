@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StartTrigger : MonoBehaviour
 {
-    [SerializeField] GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
+    public GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
 
     void OnCollisionExit(Collision other)
 	{

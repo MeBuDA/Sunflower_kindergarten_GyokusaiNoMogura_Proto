@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SceroManager
 {
@@ -10,11 +11,12 @@ namespace SceroManager
         public static float scoreCount;
 		public static float AttackMoguraCount;//モグラに攻撃した回数
 		public static float AttackOjisanCount;//おじさんに攻撃した回数
-		public TextMesh textMesh;
+		private Text text;
 
         void Start()
         {
             scoreCount = 0; //スコアリセット
+			text = GetComponent<Text>();
         }
 
         public static void AddScore(int addPoint) //Scoreスクリプトから起動
@@ -37,7 +39,7 @@ namespace SceroManager
                 scoreCount = 0;
             }
 
-            textMesh.text = "Score\n" + scoreCount;
+            text.text = "Score\n" + scoreCount;
         }
 		public static float GetScore()//スコアとカウントを他シーンに拝借
 		{

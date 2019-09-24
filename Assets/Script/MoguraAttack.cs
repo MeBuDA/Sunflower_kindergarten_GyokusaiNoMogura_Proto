@@ -6,8 +6,8 @@ namespace MoguraAttackAni
 {
     public class MoguraAttack : MonoBehaviour
     {
-        [SerializeField] int moguraAttackKakuritu;
-        [SerializeField] int bossAttackKakuritu;
+        public int moguraAttackKakuritu;
+        public int bossAttackKakuritu;
         public Animator MoguraAttackAni;
         
         public void MguAttack(string name)
@@ -18,7 +18,7 @@ namespace MoguraAttackAni
                 if (count < moguraAttackKakuritu)
                 {
                     MoguraAttackAni.SetTrigger("MoguraAttack");
-                    Debug.Log("MoguraAttack");
+                    //Debug.Log("MoguraAttack");
                 }
             }
             else if(name == "BOSS" )
@@ -26,7 +26,7 @@ namespace MoguraAttackAni
                 if (count > bossAttackKakuritu)
                 {
                     MoguraAttackAni.SetTrigger("MoguraAttack");
-                    Debug.Log("BOSSAttack");
+                    //Debug.Log("BOSSAttack");
                 }
             }
         }

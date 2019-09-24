@@ -14,7 +14,7 @@ public class ScoreAndEffectRocket : MonoBehaviour
 
     private bool attackRocketFlag; //スコアが一回だけ加算される用のフラグ
     public MoguraAttackStun stunFlag;
-    [SerializeField] GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
+    public GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
 
     void Start ()
     {

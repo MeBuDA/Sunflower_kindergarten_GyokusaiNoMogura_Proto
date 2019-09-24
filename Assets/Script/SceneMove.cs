@@ -7,7 +7,7 @@ public class SceneMove : MonoBehaviour
 {
     public string scenemoveNextScene;//この変数にSceneの名前を打ち込む
 
-    [SerializeField] GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
+    public GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
 
     void OnCollisionExit(Collision other)//特定のコリジョンから離れると発動
     {
