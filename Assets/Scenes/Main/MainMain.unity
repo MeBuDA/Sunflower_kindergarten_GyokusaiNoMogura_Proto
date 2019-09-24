@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -581,16 +581,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 324329775379126695, guid: 168387c3c1e5c44219444871b7da9682,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3693063753669468509, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
       propertyPath: stunFlag
@@ -616,6 +606,16 @@ PrefabInstance:
       propertyPath: stunFlag
       value: 
       objectReference: {fileID: 763066101}
+    - target: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 324329775379126695, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &559842037 stripped
@@ -702,11 +702,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3693063753669468509, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
       propertyPath: stunFlag
@@ -732,6 +727,11 @@ PrefabInstance:
       propertyPath: stunFlag
       value: 
       objectReference: {fileID: 763066101}
+    - target: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &570048675 stripped
@@ -919,7 +919,7 @@ PrefabInstance:
     - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
         type: 3}
       propertyPath: randomCountMax
-      value: 300
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5409253155128358026, guid: 1fdd50c9adee04ff7abcb5fe4700d723,
         type: 3}
@@ -1573,11 +1573,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5762799238966640751, guid: 168387c3c1e5c44219444871b7da9682,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3693063753669468509, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
       propertyPath: stunFlag
@@ -1603,6 +1598,11 @@ PrefabInstance:
       propertyPath: stunFlag
       value: 
       objectReference: {fileID: 763066101}
+    - target: {fileID: 5762799238966640751, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &1123034937 stripped
