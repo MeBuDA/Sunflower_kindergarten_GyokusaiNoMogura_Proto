@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 7f13970d1b0576e4193a640ebaac79ba
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: face
+    100002: hair
+    100004: hige
+    100006: InGlasses
+    100008: OutGlasses
+    100010: //RootNode
+    100012: T_shart
+    100014: wear
+    400000: face
+    400002: hair
+    400004: hige
+    400006: InGlasses
+    400008: OutGlasses
+    400010: //RootNode
+    400012: T_shart
+    400014: wear
+    2100000: face3
+    2100002: outGlasses
+    2100004: inGlasses
+    2100006: hair_hige
+    2100008: wear1
+    2100010: whiteShirt
+    2300000: face
+    2300002: hair
+    2300004: hige
+    2300006: InGlasses
+    2300008: OutGlasses
+    2300010: T_shart
+    2300012: wear
+    3300000: face
+    3300002: hair
+    3300004: hige
+    3300006: InGlasses
+    3300008: OutGlasses
+    3300010: T_shart
+    3300012: wear
+    4300000: face
+    4300002: OutGlasses
+    4300004: InGlasses
+    4300006: hige
+    4300008: wear
+    4300010: T_shart
+    4300012: hair
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: face3
+    second: {fileID: 2100000, guid: 481b67f9303f6174088b725a49bdf0ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair_hige
+    second: {fileID: 2100000, guid: 45e6597ec8c93314dabc47ef5439c41d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: inGlasses
+    second: {fileID: 2100000, guid: 37304c5dcac8f214e8ec4afbf4c2811a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outGlasses
+    second: {fileID: 2100000, guid: 46e5d0afa545d0a4189838e93d2a2ff8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wear1
+    second: {fileID: 2100000, guid: 7ee993301709612478507999b85d0746, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whiteShirt
+    second: {fileID: 2100000, guid: d330f194a3e744d449c8b8aa0e826357, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: face
+    second: {fileID: 2800000, guid: 0d8769ddf31670e49bf603374c3b5d2f, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
