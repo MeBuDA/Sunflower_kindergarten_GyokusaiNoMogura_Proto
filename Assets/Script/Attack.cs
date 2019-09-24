@@ -11,7 +11,7 @@ public class Attack : MonoBehaviour
         if (other.gameObject.CompareTag ("Hammer"))
         {
             rootAnimator.SetTrigger ("Attack");
-            Debug.Log ("Attack");
+           // Debug.Log ("Attack");
         }
     }
 }
