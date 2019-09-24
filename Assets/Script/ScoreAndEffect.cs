@@ -1,57 +1,61 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-
 using SceroManager;
-
-public class ScoreAndEffect : MonoBehaviour
-{
-    public int thisObjectScore; //モグラごとのスコアを打ち込む
-
-    private GameObject moguraObject;
-
-    private Animator animator;
-
-    private bool attackFlag;
-
-    [SerializeField] GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
-
-    void Start()
+using UnityEngine;
+using Stun;
+    public class ScoreAndEffect : MonoBehaviour
     {
-        moguraObject = transform.root.gameObject;  //MoguraObjectを取得
+        public int thisObjectScore; //モグラごとのスコアを打ち込む
 
-        animator = moguraObject.GetComponent<Animator>(); //Animatorを取得
+        private GameObject moguraObject;
 
-        attackFlag = true; //攻撃可能状態
-    }
+        private Animator animator;
 
-    void Update()
-    {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("New State")) //モグラ(全種)が待機状態のAnimationの場合
+        private bool attackFlag;
+        
+        public MoguraAttackStun stunFlag;
+        [SerializeField] GameObject[] hitHammerEffects; //ハンマーが当たった時のエフェクト
+
+        void Start ()
         {
+            moguraObject = transform.root.gameObject; //MoguraObjectを取得
+
+            animator = moguraObject.GetComponent<Animator> (); //Animatorを取得
+
             attackFlag = true; //攻撃可能状態
         }
-    }
-    void OnTriggerEnter(Collider other) //特定のコリジョンに触れた瞬間発動
-    {
-        if (other.gameObject.CompareTag("Hammer")) //特定のTagの場合
+
+        void Update ()
         {
-            if (!(animator.GetCurrentAnimatorStateInfo(0).IsName("New State"))) //モグラ(全種)が待機状態でないAnimetionの場合
+            if (animator.GetCurrentAnimatorStateInfo (0).IsName ("New State")) //モグラ(全種)が待機状態のAnimationの場合
             {
-                if (attackFlag == true) //攻撃可能状態の場合
+                attackFlag = true; //攻撃可能状態
+            }
+        }
+        void OnTriggerEnter (Collider other) //特定のコリジョンに触れた瞬間発動
+        {
+            if (stunFlag.PlayerStunFlag == false)
+            {
+                if (other.gameObject.CompareTag ("Hammer")) //特定のTagの場合
                 {
-                    //FindObjectOfType<ScoreManager>().
-                    for (int i = 0; i < hitHammerEffects.Length; i++)
+                    if (!(animator.GetCurrentAnimatorStateInfo (0).IsName ("New State"))) //モグラ(全種)が待機状態でないAnimetionの場合
                     {
-                        Instantiate(hitHammerEffects[i], this.transform.position, this.transform.rotation); //このオブジェクトと同じ場所にエフェクトを生成
+                        if (attackFlag == true) //攻撃可能状態の場合
+                        {
+                            //FindObjectOfType<ScoreManager>().
+                            for (int i = 0; i < hitHammerEffects.Length; i++)
+                            {
+                                Instantiate (hitHammerEffects[i], this.transform.position, this.transform.rotation); //このオブジェクトと同じ場所にエフェクトを生成
+                            }
+                            ScoreManager.AddScore (thisObjectScore); //ScoreManagerスクリプトのthisObjectScoreメソッド起動
+                            attackFlag = false; //攻撃不可状態
+                        }
                     }
-                    ScoreManager.AddScore(thisObjectScore); //ScoreManagerスクリプトのthisObjectScoreメソッド起動
-                    attackFlag = false; //攻撃不可状態
                 }
             }
         }
     }
-}
+
 
 /*
 //遺品置き場(始)
