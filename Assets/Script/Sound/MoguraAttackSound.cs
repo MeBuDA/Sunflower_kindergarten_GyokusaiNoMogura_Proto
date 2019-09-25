@@ -20,7 +20,7 @@ public class MoguraAttackSound : MonoBehaviour{
 
     //MoguraAttackアニメーションのEventから呼び出す
     void AttackSEPlay(){
-        if(attackAnimator.GetCurrentAnimatorStateInfo(1).IsName("MoguraAttack")){
+        if(attackAnimator.GetCurrentAnimatorStateInfo(1).IsName("MoguraAttackReady")){
             attackSEPlayer.PlaySEOneShot3D("HamSwing_pri01", 1f, playPitch);
         }
     }
