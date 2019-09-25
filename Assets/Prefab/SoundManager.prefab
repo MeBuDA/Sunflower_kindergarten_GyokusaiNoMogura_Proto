@@ -46,3 +46,5 @@ MonoBehaviour:
   systemSE:
   - {fileID: 8300000, guid: 9e09b7a047dc88440bafba923a22b633, type: 3}
   - {fileID: 8300000, guid: 0861e1c46b39fb943af193a732bb3357, type: 3}
+  playerSE:
+  - {fileID: 8300000, guid: b478bb1819f3e174b818eae68ff4605e, type: 3}

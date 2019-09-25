@@ -8,9 +8,11 @@ namespace SoundSystem{
     public class SoundManager : MonoBehaviour{
         //AudioClip
         public List<AudioClip> systemSE = new List<AudioClip>();
+        public List<AudioClip> playerSE = new List<AudioClip>();
 
         //AudioSource
         private AudioSource systemAudioSource;
+        private AudioSource playerAudioSource;
 
         //プロパティ
         public static SoundManager Instance{
@@ -23,7 +25,7 @@ namespace SoundSystem{
             if(Instance == null){
                 Instance = this;
                 //最終的にはDDOLを有効にし、Titleシーン以外のSoundManagerを消去する
-                //DontDestroyOnLoad(this);
+                DontDestroyOnLoad(this);
             }
             else{
                 Destroy(this);
@@ -31,9 +33,22 @@ namespace SoundSystem{
             }
 
             systemAudioSource = InitializeAudioSource(this.gameObject);
+            playerAudioSource = InitializeAudioSource(this.gameObject);
         }
 
         //指定した名前の音を再生
+        public void Play_System(string clipName, float playVolume = 1f){
+            AudioClip audioClip = systemSE.FirstOrDefault(clip => clip.name == clipName);
+
+            if(audioClip == null){
+                Debug.Log(clipName + " not found");
+                return;
+            }
+            systemAudioSource.volume = playVolume;
+            systemAudioSource.clip = audioClip;
+            systemAudioSource.loop = false;
+            systemAudioSource.Play();
+        }
         public void PlayOneShot_System(string clipName){
             AudioClip audioClip = systemSE.FirstOrDefault(clip => clip.name == clipName);
 
@@ -41,8 +56,20 @@ namespace SoundSystem{
                 Debug.Log(clipName + " not found");
                 return;
             }
-
             systemAudioSource.PlayOneShot(audioClip);
+        }
+        
+        public void Play_PlayerSE(string clipName, float playVolume = 1f){
+            AudioClip audioClip = playerSE.FirstOrDefault(clip => clip.name == clipName);
+
+            if(audioClip == null){
+                Debug.Log(clipName + " not found");
+                return;
+            }
+            playerAudioSource.volume = playVolume;
+            playerAudioSource.clip = audioClip;
+            playerAudioSource.loop = false;
+            playerAudioSource.Play();
         }
 
         //AduioSource生成
