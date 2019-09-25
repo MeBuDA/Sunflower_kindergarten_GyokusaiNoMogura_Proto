@@ -1975,6 +1975,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6695007432702577464, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerDevMasChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 719982507}
+    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 551970414}
+    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: mousePlayer
@@ -1989,11 +2009,6 @@ PrefabInstance:
         type: 3}
       propertyPath: oculusGo
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695007432702577464, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerDevMasChange
       objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577470, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
@@ -2048,21 +2063,6 @@ PrefabInstance:
     - target: {fileID: 6695007432702577470, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: mousePlayer
-      value: 
-      objectReference: {fileID: 719982507}
-    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGoplayer
-      value: 
-      objectReference: {fileID: 551970414}
-    - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGo
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -2684,11 +2684,6 @@ PrefabInstance:
       propertyPath: rocketMoguraPosition.Array.data[2]
       value: 
       objectReference: {fileID: 880028885}
-    - target: {fileID: 1006704116219056456, guid: b5bc03fb08b95db43adbe1ece4efe3cd,
-        type: 3}
-      propertyPath: RocketUpTime
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1680068001066934109, guid: b5bc03fb08b95db43adbe1ece4efe3cd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b5bc03fb08b95db43adbe1ece4efe3cd, type: 3}

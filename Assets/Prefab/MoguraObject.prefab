@@ -766,6 +766,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a2dc190cd6358dc4a8a9c361ffc3cee8, type: 3}
   - {fileID: 8300000, guid: c818c5fbf7dee1c4595c37b5ca32654a, type: 3}
   - {fileID: 8300000, guid: 1e65c571d4703664aa7539fe0d2a8c88, type: 3}
+  - {fileID: 8300000, guid: f10a2fc6e02942f45809deaf6fa5e202, type: 3}
 --- !u!114 &5910958517799495937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,6 +827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stunTime: 3
   stunFlag: {fileID: 0}
+  attackSE: {fileID: 6732126850487992820}
 --- !u!1001 &1724466543432571447
 PrefabInstance:
   m_ObjectHideFlags: 0
