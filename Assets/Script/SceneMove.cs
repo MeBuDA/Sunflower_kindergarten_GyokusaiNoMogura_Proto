@@ -11,6 +11,10 @@ public class SceneMove : MonoBehaviour
 
     void OnCollisionExit(Collision other)//特定のコリジョンから離れると発動
     {
+#if !UNITY_EDITOR
+        if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+        {
+#endif
         if (other.gameObject.CompareTag("Hammer"))//特定のTagの場合
         {
             for (int i = 0; i < hitHammerEffects.Length; i++)
@@ -19,7 +23,10 @@ public class SceneMove : MonoBehaviour
             }
             Invoke("SceneTeleport", 1.0f);
         }
+        }
+#if !UNITY_EDITOR
     }
+#endif
 
     void SceneTeleport()
     {
