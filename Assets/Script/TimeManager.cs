@@ -46,7 +46,7 @@ public class TimeManager : MonoBehaviour
 			//ロケット警告の再生 サウンド追加分3/3
 			if ((seconds == RocketUpTime - 6.0f) && (!played))
             {
-	            SoundManager.Instance.PlayOneShot_System("Alert_pri01");
+	            SoundManager.Instance.Play_System("Alert_pri01", 0.1f);
 		        played = true;
 			}
 			//サウンド追加分3/3 終了
