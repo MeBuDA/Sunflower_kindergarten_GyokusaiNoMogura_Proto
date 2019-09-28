@@ -72,6 +72,12 @@ namespace SoundSystem{
             playerAudioSource.Play();
         }
 
+        //再生状態を判定
+        public bool PlayFlag_PlayerSE(){
+            bool playFlag = playerAudioSource.isPlaying;
+            return playFlag;
+        }
+
         //AduioSource生成
         private AudioSource InitializeAudioSource(GameObject parentGameObject){
             AudioSource audioSource = parentGameObject.AddComponent<AudioSource>();

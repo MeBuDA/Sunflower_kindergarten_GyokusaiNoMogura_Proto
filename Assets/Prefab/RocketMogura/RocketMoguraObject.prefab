@@ -208,6 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stunTime: 3
   stunFlag: {fileID: 0}
+  attackSE: {fileID: 5086281793850805497}
 --- !u!1001 &5734888552565764264
 PrefabInstance:
   m_ObjectHideFlags: 0

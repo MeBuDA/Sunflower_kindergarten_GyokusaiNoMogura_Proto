@@ -12,6 +12,8 @@ public class MoguraAttackSound : MonoBehaviour{
 
     //パラメーター
     private float playPitch = 1.2f;
+    public ParryTrigger parry;
+    public Attack attack;
 
     void Start(){
     }
@@ -23,5 +25,10 @@ public class MoguraAttackSound : MonoBehaviour{
         if(attackAnimator.GetCurrentAnimatorStateInfo(1).IsName("MoguraAttackReady")){
             attackSEPlayer.PlaySEOneShot3D("HamSwing_pri01", 1f, playPitch);
         }
+    }
+
+    void AttackHitSEPlay(){
+        if(attackAnimator)
+        attackSEPlayer.PlaySEOneShot3D("MogAttack_pri01");
     }
 }

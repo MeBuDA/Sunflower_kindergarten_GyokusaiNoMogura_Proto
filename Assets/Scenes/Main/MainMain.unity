@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -225,6 +225,26 @@ PrefabInstance:
     - target: {fileID: 2605899883977170211, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
       propertyPath: stunFlag
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 7818036576116306587, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 6876089894983932327, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 2184584034730304745, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 861293107616857834, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
       value: 
       objectReference: {fileID: 763066101}
     m_RemovedComponents: []
@@ -581,6 +601,26 @@ PrefabInstance:
       propertyPath: stunFlag
       value: 
       objectReference: {fileID: 763066101}
+    - target: {fileID: 7818036576116306587, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 6876089894983932327, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 2184584034730304745, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 861293107616857834, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &399712670 stripped
@@ -784,6 +824,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7818036576116306587, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 6876089894983932327, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 2184584034730304745, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 861293107616857834, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &559842037 stripped
@@ -900,6 +960,26 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7818036576116306587, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 6876089894983932327, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 2184584034730304745, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 861293107616857834, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &570048675 stripped
@@ -1661,6 +1741,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7818036576116306587, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 6876089894983932327, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 2184584034730304745, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
+    - target: {fileID: 861293107616857834, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stun
+      value: 
+      objectReference: {fileID: 763066101}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &1123034937 stripped
@@ -1941,7 +2041,6 @@ PrefabInstance:
       propertyPath: oculusGo
       value: 0
       objectReference: {fileID: 0}
-      objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577470, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2018,6 +2117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84e8600630770c4a847a93bfe383457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stun: {fileID: 0}
 --- !u!1001 &1462785172
 PrefabInstance:
   m_ObjectHideFlags: 0
