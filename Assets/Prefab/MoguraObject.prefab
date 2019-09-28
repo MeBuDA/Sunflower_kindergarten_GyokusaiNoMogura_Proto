@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2906190851899663514}
   - component: {fileID: 9122186000853078872}
   - component: {fileID: 3701682575566011413}
+  - component: {fileID: 893197769953159534}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -153,6 +154,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cfef239832d24042bb1f91d8a83f9c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoguraAttackAni: {fileID: 5762799240742577911}
+--- !u!114 &893197769953159534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707148908376918872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87bbf527340352a4b980bc754213ad2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stunTime: 3
+  stunFlag: {fileID: 0}
   MoguraAttackAni: {fileID: 5762799240742577911}
 --- !u!1 &3497459455243238376
 GameObject:
@@ -263,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84e8600630770c4a847a93bfe383457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stun: {fileID: 0}
 --- !u!54 &6008273757608486615
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -305,6 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84e8600630770c4a847a93bfe383457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stun: {fileID: 0}
 --- !u!114 &2549919049776954383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,6 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84e8600630770c4a847a93bfe383457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stun: {fileID: 0}
 --- !u!54 &7402232640758372737
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -482,6 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84e8600630770c4a847a93bfe383457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stun: {fileID: 0}
 --- !u!1 &5762799238966640751
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +596,6 @@ GameObject:
   - component: {fileID: 5910958517799495937}
   - component: {fileID: 2749837889578011548}
   - component: {fileID: 8970918749833766390}
-  - component: {fileID: 2605899883977170211}
   m_Layer: 0
   m_Name: MoguraObject
   m_TagString: Untagged
@@ -766,7 +785,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a2dc190cd6358dc4a8a9c361ffc3cee8, type: 3}
   - {fileID: 8300000, guid: c818c5fbf7dee1c4595c37b5ca32654a, type: 3}
   - {fileID: 8300000, guid: 1e65c571d4703664aa7539fe0d2a8c88, type: 3}
-  - {fileID: 8300000, guid: f10a2fc6e02942f45809deaf6fa5e202, type: 3}
 --- !u!114 &5910958517799495937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,21 +831,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moguraObject: {fileID: 6732126850487992820}
---- !u!114 &2605899883977170211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5762799240742577905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bbf527340352a4b980bc754213ad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stunTime: 3
-  stunFlag: {fileID: 0}
-  attackSE: {fileID: 6732126850487992820}
 --- !u!1001 &1724466543432571447
 PrefabInstance:
   m_ObjectHideFlags: 0

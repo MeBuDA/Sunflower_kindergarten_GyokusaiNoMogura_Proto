@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5086281793850805497}
   - component: {fileID: 8847158644324618385}
   - component: {fileID: 2196531711034695467}
-  - component: {fileID: 8865109673065829688}
   m_Layer: 0
   m_Name: RocketMoguraObject
   m_TagString: Untagged
@@ -194,21 +193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rocketSE: {fileID: 5086281793850805497}
---- !u!114 &8865109673065829688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8746585787888627468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bbf527340352a4b980bc754213ad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stunTime: 3
-  stunFlag: {fileID: 0}
-  attackSE: {fileID: 5086281793850805497}
 --- !u!1001 &5734888552565764264
 PrefabInstance:
   m_ObjectHideFlags: 0

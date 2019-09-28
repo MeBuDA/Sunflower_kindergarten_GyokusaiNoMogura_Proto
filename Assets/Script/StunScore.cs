@@ -8,25 +8,25 @@ public class StunScore : MonoBehaviour
 {
         [SerializeField] float stunTime = 3.0f;
         public MoguraAttackStun stunFlag;
+        public Animator MoguraAttackAni;
 
-        //Sound System
-        public GameSEPlayer attackSE;
-
-        void Start ()
-        {
-
+        void OnTriggerEnter(Collider other){
+            if(other.name.Equals("PlayerCollider")){
+                PlayerStun();
+            }
         }
 
         public void PlayerStun ()
         {
-            
-            attackSE.PlaySEOneShot3D("MogAttack_pri01");
+            SoundManager.Instance.PlayOneShot_PlayerSE("MogAttack_pri01");
             if(stunFlag.PlayerStunFlag == false){
                 SoundManager.Instance.Play_PlayerSE("Stan_pri02", 0.2f);
             }
+            MoguraAttackAni.SetTrigger("HitMogAttack");
             stunFlag.PlayerStunFlag = true;
             Invoke ("StunRelease", stunTime);
         }
+
         void StunRelease ()
         {
             stunFlag.PlayerStunFlag = false;

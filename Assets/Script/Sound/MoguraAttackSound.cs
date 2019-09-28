@@ -12,8 +12,6 @@ public class MoguraAttackSound : MonoBehaviour{
 
     //パラメーター
     private float playPitch = 1.2f;
-    public ParryTrigger parry;
-    public Attack attack;
 
     void Start(){
     }

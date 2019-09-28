@@ -71,6 +71,16 @@ namespace SoundSystem{
             playerAudioSource.loop = false;
             playerAudioSource.Play();
         }
+        
+        public void PlayOneShot_PlayerSE(string clipName){
+            AudioClip audioClip = playerSE.FirstOrDefault(clip => clip.name == clipName);
+
+            if(audioClip == null){
+                Debug.Log(clipName + " not found");
+                return;
+            }
+            playerAudioSource.PlayOneShot(audioClip);
+        }
 
         //再生状態を判定
         public bool PlayFlag_PlayerSE(){
