@@ -20,6 +20,7 @@ public class BackScene : MonoBehaviour
        } 
     }
 #endif
+#if UNITY_EDITOR
 void Update()
     {
        if(Input.GetKeyDown(KeyCode.Space))
@@ -27,4 +28,5 @@ void Update()
            SceneManager.LoadScene(backSceneName);
        } 
     }
+#endif
 }
