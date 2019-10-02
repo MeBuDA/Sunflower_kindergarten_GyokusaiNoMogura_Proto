@@ -12,7 +12,7 @@ public class SceneMove : MonoBehaviour
     void OnCollisionExit(Collision other)//特定のコリジョンから離れると発動
     {
 #if !UNITY_EDITOR
-        if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+        if(OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
         {
 #endif
         if (other.gameObject.CompareTag("Hammer"))//特定のTagの場合

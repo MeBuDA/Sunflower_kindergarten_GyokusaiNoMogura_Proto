@@ -9,7 +9,7 @@ public class StartTrigger : MonoBehaviour
     void OnCollisionExit(Collision other)
 	{
 #if !UNITY_EDITOR
-        if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+        if(OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
         {
 #endif
 		GameObject Switch = GameObject.Find("StartSwitch");//objectの取得
