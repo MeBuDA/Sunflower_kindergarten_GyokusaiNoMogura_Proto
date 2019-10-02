@@ -208,6 +208,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d776eed36bbe33a40bc19944ff022000, type: 3}
+--- !u!1001 &373255261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4651352937163329956, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_Name
+      value: EventSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.009936805
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13168655
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1040039
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050406153487771120, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810837500087635050, guid: baa6cf9de5b46ec45b6e7158430799c9,
+        type: 3}
+      propertyPath: backSceneName
+      value: LevelSelectMain
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: baa6cf9de5b46ec45b6e7158430799c9, type: 3}
 --- !u!1001 &1204327089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -215,21 +289,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGoplayer
-      value: 
-      objectReference: {fileID: 1820000077}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: mousePlayer
-      value: 
-      objectReference: {fileID: 1666382867}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGo
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577464, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_Name
@@ -249,6 +308,21 @@ PrefabInstance:
         type: 3}
       propertyPath: oculusGo
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 1820000077}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 1666382867}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGo
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577470, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
