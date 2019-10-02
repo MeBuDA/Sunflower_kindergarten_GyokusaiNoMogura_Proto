@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -844,6 +844,11 @@ PrefabInstance:
       propertyPath: stun
       value: 
       objectReference: {fileID: 763066101}
+    - target: {fileID: 893197769953159534, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: stunFlag
+      value: 
+      objectReference: {fileID: 763066101}
     - target: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
       propertyPath: m_ApplyRootMotion
@@ -854,11 +859,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 893197769953159534, guid: 168387c3c1e5c44219444871b7da9682,
-        type: 3}
-      propertyPath: stunFlag
-      value: 
-      objectReference: {fileID: 763066101}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &559842037 stripped
@@ -990,16 +990,16 @@ PrefabInstance:
       propertyPath: stun
       value: 
       objectReference: {fileID: 763066101}
-    - target: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 893197769953159534, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
       propertyPath: stunFlag
       value: 
       objectReference: {fileID: 763066101}
+    - target: {fileID: 5762799240742577911, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &570048675 stripped
@@ -1436,6 +1436,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8865109673065829688, guid: ecc593370b6e09b47bbe146858e5a53f,
+        type: 3}
+      propertyPath: stunFlag
+      value: 
+      objectReference: {fileID: 763066101}
     - target: {fileID: 1411968671354521926, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: stunFlag
@@ -1446,7 +1451,7 @@ PrefabInstance:
       propertyPath: PDMC
       value: 
       objectReference: {fileID: 1212137489}
-    - target: {fileID: 8865109673065829688, guid: ecc593370b6e09b47bbe146858e5a53f,
+    - target: {fileID: 2696023633726252474, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: stunFlag
       value: 
@@ -1776,16 +1781,16 @@ PrefabInstance:
       propertyPath: stun
       value: 
       objectReference: {fileID: 763066101}
-    - target: {fileID: 5762799238966640751, guid: 168387c3c1e5c44219444871b7da9682,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 893197769953159534, guid: 168387c3c1e5c44219444871b7da9682,
         type: 3}
       propertyPath: stunFlag
       value: 
       objectReference: {fileID: 763066101}
+    - target: {fileID: 5762799238966640751, guid: 168387c3c1e5c44219444871b7da9682,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168387c3c1e5c44219444871b7da9682, type: 3}
 --- !u!114 &1123034937 stripped
@@ -1959,6 +1964,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8865109673065829688, guid: ecc593370b6e09b47bbe146858e5a53f,
+        type: 3}
+      propertyPath: stunFlag
+      value: 
+      objectReference: {fileID: 763066101}
     - target: {fileID: 1411968671354521926, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: stunFlag
@@ -1969,7 +1979,7 @@ PrefabInstance:
       propertyPath: PDMC
       value: 
       objectReference: {fileID: 1212137489}
-    - target: {fileID: 8865109673065829688, guid: ecc593370b6e09b47bbe146858e5a53f,
+    - target: {fileID: 2696023633726252474, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: stunFlag
       value: 
@@ -2076,6 +2086,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: mousePlayer
+      value: 
+      objectReference: {fileID: 719982507}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGoplayer
+      value: 
+      objectReference: {fileID: 551970414}
+    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
+        type: 3}
+      propertyPath: oculusGo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695007432702577464, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: m_Name
@@ -2092,21 +2117,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 551970414}
     - target: {fileID: 4825064914325695543, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGo
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: mousePlayer
-      value: 
-      objectReference: {fileID: 719982507}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
-        type: 3}
-      propertyPath: oculusGoplayer
-      value: 
-      objectReference: {fileID: 551970414}
-    - target: {fileID: 6695007432702577471, guid: cbf45fb9f77bc304b851b5b4786a006d,
         type: 3}
       propertyPath: oculusGo
       value: 0
@@ -2354,6 +2364,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8865109673065829688, guid: ecc593370b6e09b47bbe146858e5a53f,
+        type: 3}
+      propertyPath: stunFlag
+      value: 
+      objectReference: {fileID: 763066101}
     - target: {fileID: 1411968671354521926, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: stunFlag
@@ -2364,7 +2379,7 @@ PrefabInstance:
       propertyPath: PDMC
       value: 
       objectReference: {fileID: 1212137489}
-    - target: {fileID: 8865109673065829688, guid: ecc593370b6e09b47bbe146858e5a53f,
+    - target: {fileID: 2696023633726252474, guid: ecc593370b6e09b47bbe146858e5a53f,
         type: 3}
       propertyPath: stunFlag
       value: 
@@ -2855,6 +2870,11 @@ PrefabInstance:
       propertyPath: rocketMoguraPosition.Array.data[2]
       value: 
       objectReference: {fileID: 880028885}
+    - target: {fileID: 1006704116219056456, guid: b5bc03fb08b95db43adbe1ece4efe3cd,
+        type: 3}
+      propertyPath: RocketUpTime
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1680068001066934109, guid: b5bc03fb08b95db43adbe1ece4efe3cd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b5bc03fb08b95db43adbe1ece4efe3cd, type: 3}
