@@ -65,3 +65,6 @@ crashlytics-build.properties
 #other
 Assets\Editor\CriWare\CriAtom/saveAcfData.json
 Assets\Editor\CriWare\CriAtom/saveAcfData.json.meta
+*.keystore
+*.fbx
+[Aa]ssets/Oculus/*
